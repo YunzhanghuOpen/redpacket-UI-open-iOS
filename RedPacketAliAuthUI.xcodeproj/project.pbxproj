@@ -1,0 +1,1354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		92769FB71EE8E81300B7EF91 /* RedpacketAliOpenUIBulid */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 92769FBA1EE8E81300B7EF91 /* Build configuration list for PBXAggregateTarget "RedpacketAliOpenUIBulid" */;
+			buildPhases = (
+				92769FBB1EE8EA9C00B7EF91 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = RedpacketAliOpenUIBulid;
+			productName = RedpacketAliOpenAggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		92769F441EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E321EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m */; };
+		92769F451EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E341EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m */; };
+		92769F461EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E361EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m */; };
+		92769F471EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E381EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.m */; };
+		92769F481EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E3A1EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.m */; };
+		92769F491EE81A8D00B7EF91 /* RedpacketTypeRandHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E3C1EE81A8D00B7EF91 /* RedpacketTypeRandHandle.m */; };
+		92769F4A1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E3E1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.m */; };
+		92769F4B1EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E401EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.m */; };
+		92769F4C1EE81A8D00B7EF91 /* RedpacketViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E421EE81A8D00B7EF91 /* RedpacketViewControl.m */; };
+		92769F4D1EE81A8D00B7EF91 /* UIViewController+RP_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E441EE81A8D00B7EF91 /* UIViewController+RP_Private.m */; };
+		92769F4E1EE81A8D00B7EF91 /* RPMemberRedpacketPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E471EE81A8D00B7EF91 /* RPMemberRedpacketPreView.m */; };
+		92769F4F1EE81A8D00B7EF91 /* RPNormalRedpacketPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E491EE81A8D00B7EF91 /* RPNormalRedpacketPreView.m */; };
+		92769F501EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E4B1EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.m */; };
+		92769F511EE81A8D00B7EF91 /* RPRedpacketPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E4D1EE81A8D00B7EF91 /* RPRedpacketPreView.m */; };
+		92769F521EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E4F1EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.m */; };
+		92769F531EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E521EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.m */; };
+		92769F541EE81A8E00B7EF91 /* RPMyIncomeRedPacketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E551EE81A8D00B7EF91 /* RPMyIncomeRedPacketCell.m */; };
+		92769F551EE81A8E00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E571EE81A8D00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.m */; };
+		92769F561EE81A8E00B7EF91 /* RPReceiotsInAlipayHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E591EE81A8D00B7EF91 /* RPReceiotsInAlipayHeaderView.m */; };
+		92769F571EE81A8E00B7EF91 /* RedpacketDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E5D1EE81A8D00B7EF91 /* RedpacketDetailCell.m */; };
+		92769F581EE81A8E00B7EF91 /* RedPacketDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E5F1EE81A8D00B7EF91 /* RedPacketDetailViewController.m */; };
+		92769F591EE81A8E00B7EF91 /* RPAdvertisementDetailViewContrroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E611EE81A8D00B7EF91 /* RPAdvertisementDetailViewContrroller.m */; };
+		92769F5A1EE81A8E00B7EF91 /* RPAdvertisementDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E641EE81A8D00B7EF91 /* RPAdvertisementDetailView.m */; };
+		92769F5B1EE81A8E00B7EF91 /* RPRedpacketDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E661EE81A8D00B7EF91 /* RPRedpacketDetailHeaderView.m */; };
+		92769F5C1EE81A8E00B7EF91 /* RPAliAuthPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E6A1EE81A8D00B7EF91 /* RPAliAuthPay.m */; };
+		92769F5D1EE81A8E00B7EF91 /* RPAlipayAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E6C1EE81A8D00B7EF91 /* RPAlipayAuth.m */; };
+		92769F5E1EE81A8E00B7EF91 /* RPRedpacketSendControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E6E1EE81A8D00B7EF91 /* RPRedpacketSendControl.m */; };
+		92769F5F1EE81A8E00B7EF91 /* RPRedpacketViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E711EE81A8D00B7EF91 /* RPRedpacketViews.m */; };
+		92769F601EE81A8E00B7EF91 /* RPSendRedPacketCertainCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E751EE81A8D00B7EF91 /* RPSendRedPacketCertainCellItem.m */; };
+		92769F611EE81A8E00B7EF91 /* RPSendRedPacketChangeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E771EE81A8D00B7EF91 /* RPSendRedPacketChangeCellItem.m */; };
+		92769F621EE81A8E00B7EF91 /* RPSendRedPacketCountCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E791EE81A8D00B7EF91 /* RPSendRedPacketCountCellItem.m */; };
+		92769F631EE81A8E00B7EF91 /* RPSendRedPacketDescribeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E7B1EE81A8D00B7EF91 /* RPSendRedPacketDescribeCellItem.m */; };
+		92769F641EE81A8E00B7EF91 /* RPSendRedPacketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E7D1EE81A8D00B7EF91 /* RPSendRedPacketItem.m */; };
+		92769F651EE81A8E00B7EF91 /* RPSendRedPacketMemberCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E7F1EE81A8D00B7EF91 /* RPSendRedPacketMemberCellItem.m */; };
+		92769F661EE81A8E00B7EF91 /* YZHChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E831EE81A8D00B7EF91 /* YZHChineseString.m */; };
+		92769F671EE81A8E00B7EF91 /* NSString+YZHPinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E861EE81A8D00B7EF91 /* NSString+YZHPinYin4Cocoa.m */; };
+		92769F681EE81A8E00B7EF91 /* YZHChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E891EE81A8D00B7EF91 /* YZHChineseInclude.m */; };
+		92769F691EE81A8E00B7EF91 /* YZHChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E8B1EE81A8D00B7EF91 /* YZHChineseToPinyinResource.m */; };
+		92769F6A1EE81A8E00B7EF91 /* YZHHanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E8D1EE81A8D00B7EF91 /* YZHHanyuPinyinOutputFormat.m */; };
+		92769F6B1EE81A8E00B7EF91 /* YZHPinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E8F1EE81A8D00B7EF91 /* YZHPinyinFormatter.m */; };
+		92769F6C1EE81A8E00B7EF91 /* YZHPinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E911EE81A8D00B7EF91 /* YZHPinYinForObjc.m */; };
+		92769F6D1EE81A8E00B7EF91 /* YZHPinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E931EE81A8D00B7EF91 /* YZHPinyinHelper.m */; };
+		92769F6E1EE81A8E00B7EF91 /* YZHZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E951EE81A8D00B7EF91 /* YZHZYPinYinSearch.m */; };
+		92769F6F1EE81A8E00B7EF91 /* RPBaseCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E991EE81A8D00B7EF91 /* RPBaseCellItem.m */; };
+		92769F701EE81A8E00B7EF91 /* RPBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E9B1EE81A8D00B7EF91 /* RPBaseTableView.m */; };
+		92769F711EE81A8E00B7EF91 /* RPBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E9D1EE81A8D00B7EF91 /* RPBaseTableViewCell.m */; };
+		92769F721EE81A8E00B7EF91 /* RPBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E9F1EE81A8D00B7EF91 /* RPBaseTableViewController.m */; };
+		92769F731EE81A8E00B7EF91 /* RPSendAmountPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EA11EE81A8D00B7EF91 /* RPSendAmountPacketViewController.m */; };
+		92769F741EE81A8E00B7EF91 /* RPSendRedPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EA31EE81A8D00B7EF91 /* RPSendRedPacketViewController.m */; };
+		92769F751EE81A8E00B7EF91 /* SeachMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EA51EE81A8D00B7EF91 /* SeachMemberCell.m */; };
+		92769F761EE81A8E00B7EF91 /* SearchMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EA71EE81A8D00B7EF91 /* SearchMemberViewController.m */; };
+		92769F771EE81A8E00B7EF91 /* RPSendRedPacketCertainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EAB1EE81A8D00B7EF91 /* RPSendRedPacketCertainTableViewCell.m */; };
+		92769F781EE81A8E00B7EF91 /* RPSendRedPacketChangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EAD1EE81A8D00B7EF91 /* RPSendRedPacketChangeTableViewCell.m */; };
+		92769F791EE81A8E00B7EF91 /* RPSendRedPacketCountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EAF1EE81A8D00B7EF91 /* RPSendRedPacketCountTableViewCell.m */; };
+		92769F7A1EE81A8E00B7EF91 /* RPSendRedPacketDescribeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EB11EE81A8D00B7EF91 /* RPSendRedPacketDescribeTableViewCell.m */; };
+		92769F7B1EE81A8E00B7EF91 /* RPSendRedPacketMemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EB31EE81A8D00B7EF91 /* RPSendRedPacketMemberTableViewCell.m */; };
+		92769F7C1EE81A8E00B7EF91 /* RPSendRedPacketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EB51EE81A8D00B7EF91 /* RPSendRedPacketTableViewCell.m */; };
+		92769F7D1EE81A8E00B7EF91 /* YZHMBProgressHUD+YZHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EBC1EE81A8D00B7EF91 /* YZHMBProgressHUD+YZHAdd.m */; };
+		92769F7E1EE81A8E00B7EF91 /* YZHMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EBE1EE81A8D00B7EF91 /* YZHMBProgressHUD.m */; };
+		92769F7F1EE81A8E00B7EF91 /* YZHRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EC21EE81A8D00B7EF91 /* YZHRefreshAutoFooter.m */; };
+		92769F801EE81A8E00B7EF91 /* YZHRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EC41EE81A8D00B7EF91 /* YZHRefreshBackFooter.m */; };
+		92769F811EE81A8E00B7EF91 /* YZHRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EC61EE81A8D00B7EF91 /* YZHRefreshComponent.m */; };
+		92769F821EE81A8E00B7EF91 /* YZHRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EC81EE81A8D00B7EF91 /* YZHRefreshFooter.m */; };
+		92769F831EE81A8E00B7EF91 /* YZHRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ECA1EE81A8D00B7EF91 /* YZHRefreshHeader.m */; };
+		92769F841EE81A8E00B7EF91 /* YZHRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ECF1EE81A8D00B7EF91 /* YZHRefreshAutoGifFooter.m */; };
+		92769F851EE81A8E00B7EF91 /* YZHRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ED11EE81A8D00B7EF91 /* YZHRefreshAutoNormalFooter.m */; };
+		92769F861EE81A8E00B7EF91 /* YZHRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ED31EE81A8D00B7EF91 /* YZHRefreshAutoStateFooter.m */; };
+		92769F871EE81A8E00B7EF91 /* YZHRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ED61EE81A8D00B7EF91 /* YZHRefreshBackGifFooter.m */; };
+		92769F881EE81A8E00B7EF91 /* YZHRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769ED81EE81A8D00B7EF91 /* YZHRefreshBackNormalFooter.m */; };
+		92769F891EE81A8E00B7EF91 /* YZHRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EDA1EE81A8D00B7EF91 /* YZHRefreshBackStateFooter.m */; };
+		92769F8A1EE81A8E00B7EF91 /* YZHRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EDD1EE81A8D00B7EF91 /* YZHRefreshGifHeader.m */; };
+		92769F8B1EE81A8E00B7EF91 /* YZHRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EDF1EE81A8D00B7EF91 /* YZHRefreshNormalHeader.m */; };
+		92769F8C1EE81A8E00B7EF91 /* YZHRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EE11EE81A8D00B7EF91 /* YZHRefreshStateHeader.m */; };
+		92769F8D1EE81A8E00B7EF91 /* UIScrollView+YZHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EE31EE81A8D00B7EF91 /* UIScrollView+YZHExtension.m */; };
+		92769F8E1EE81A8E00B7EF91 /* UIScrollView+YZHRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EE51EE81A8D00B7EF91 /* UIScrollView+YZHRefresh.m */; };
+		92769F8F1EE81A8E00B7EF91 /* YZHRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EE91EE81A8D00B7EF91 /* YZHRefreshConst.m */; };
+		92769F901EE81A8E00B7EF91 /* NSData+YZHImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EEC1EE81A8D00B7EF91 /* NSData+YZHImageContentType.m */; };
+		92769F911EE81A8E00B7EF91 /* UIImage+YZHGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EEE1EE81A8D00B7EF91 /* UIImage+YZHGIF.m */; };
+		92769F921EE81A8E00B7EF91 /* UIImage+YZHMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EF01EE81A8D00B7EF91 /* UIImage+YZHMultiFormat.m */; };
+		92769F931EE81A8E00B7EF91 /* UIImageView+YZHWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EF21EE81A8D00B7EF91 /* UIImageView+YZHWebCache.m */; };
+		92769F941EE81A8E00B7EF91 /* UIView+YZHWebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EF41EE81A8D00B7EF91 /* UIView+YZHWebCacheOperation.m */; };
+		92769F951EE81A8E00B7EF91 /* YZHSDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EF61EE81A8D00B7EF91 /* YZHSDImageCache.m */; };
+		92769F961EE81A8E00B7EF91 /* YZHSDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EF81EE81A8D00B7EF91 /* YZHSDWebImageCompat.m */; };
+		92769F971EE81A8E00B7EF91 /* YZHSDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EFA1EE81A8D00B7EF91 /* YZHSDWebImageDecoder.m */; };
+		92769F981EE81A8E00B7EF91 /* YZHSDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EFC1EE81A8D00B7EF91 /* YZHSDWebImageDownloader.m */; };
+		92769F991EE81A8E00B7EF91 /* YZHSDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769EFE1EE81A8D00B7EF91 /* YZHSDWebImageDownloaderOperation.m */; };
+		92769F9A1EE81A8E00B7EF91 /* YZHSDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F001EE81A8D00B7EF91 /* YZHSDWebImageManager.m */; };
+		92769F9B1EE81A8E00B7EF91 /* YZHSDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F031EE81A8D00B7EF91 /* YZHSDWebImagePrefetcher.m */; };
+		92769F9C1EE81A8E00B7EF91 /* NSBundle+RedpacketBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F071EE81A8D00B7EF91 /* NSBundle+RedpacketBundle.m */; };
+		92769F9D1EE81A8E00B7EF91 /* RedpacketColorStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F091EE81A8D00B7EF91 /* RedpacketColorStore.m */; };
+		92769F9E1EE81A8E00B7EF91 /* UIAlertView+YZHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F0B1EE81A8D00B7EF91 /* UIAlertView+YZHAlert.m */; };
+		92769F9F1EE81A8E00B7EF91 /* UIButton+RPAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F0D1EE81A8D00B7EF91 /* UIButton+RPAction.m */; };
+		92769FA01EE81A8E00B7EF91 /* UIColor+RedpacketColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F0F1EE81A8D00B7EF91 /* UIColor+RedpacketColors.m */; };
+		92769FA11EE81A8E00B7EF91 /* UIView+YZHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F111EE81A8D00B7EF91 /* UIView+YZHAnimation.m */; };
+		92769FA21EE81A8E00B7EF91 /* UIView+YZHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F131EE81A8D00B7EF91 /* UIView+YZHExtension.m */; };
+		92769FA31EE81A8E00B7EF91 /* UIView+YZHPrompting.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F151EE81A8D00B7EF91 /* UIView+YZHPrompting.m */; };
+		92769FA41EE81A8E00B7EF91 /* NSArray+RPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F191EE81A8D00B7EF91 /* NSArray+RPAdditions.m */; };
+		92769FA51EE81A8E00B7EF91 /* RPCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F1B1EE81A8D00B7EF91 /* RPCompositeConstraint.m */; };
+		92769FA61EE81A8E00B7EF91 /* RPConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F1E1EE81A8D00B7EF91 /* RPConstraint.m */; };
+		92769FA71EE81A8E00B7EF91 /* RPConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F201EE81A8D00B7EF91 /* RPConstraintMaker.m */; };
+		92769FA81EE81A8E00B7EF91 /* RPLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F231EE81A8D00B7EF91 /* RPLayoutConstraint.m */; };
+		92769FA91EE81A8E00B7EF91 /* RPViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F261EE81A8D00B7EF91 /* RPViewAttribute.m */; };
+		92769FAA1EE81A8E00B7EF91 /* RPViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F281EE81A8D00B7EF91 /* RPViewConstraint.m */; };
+		92769FAB1EE81A8E00B7EF91 /* View+RPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F2B1EE81A8D00B7EF91 /* View+RPAdditions.m */; };
+		92769FAC1EE81A8E00B7EF91 /* RedpacketErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F2D1EE81A8D00B7EF91 /* RedpacketErrorView.m */; };
+		92769FAD1EE81A8E00B7EF91 /* RPAliPayEmpower.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F2F1EE81A8D00B7EF91 /* RPAliPayEmpower.m */; };
+		92769FAE1EE81A8E00B7EF91 /* RPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F311EE81A8D00B7EF91 /* RPBaseViewController.m */; };
+		92769FAF1EE81A8E00B7EF91 /* RPRedpackeNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F331EE81A8D00B7EF91 /* RPRedpackeNavgationController.m */; };
+		92769FB01EE81A8E00B7EF91 /* RPRedpacketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F361EE81A8D00B7EF91 /* RPRedpacketTool.m */; };
+		92769FB11EE81A8E00B7EF91 /* RPRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F381EE81A8D00B7EF91 /* RPRefreshTableViewController.m */; };
+		92769FB21EE81A8E00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F3A1EE81A8D00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.m */; };
+		92769FB31EE81A8E00B7EF91 /* RPSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F3C1EE81A8D00B7EF91 /* RPSoundPlayer.m */; };
+		92769FB41EE81A8E00B7EF91 /* RPUntility.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F3E1EE81A8D00B7EF91 /* RPUntility.m */; };
+		92769FB51EE81A8E00B7EF91 /* PlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F411EE81A8D00B7EF91 /* PlaceHolderTextView.m */; };
+		92769FB61EE81A8E00B7EF91 /* YZTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F431EE81A8D00B7EF91 /* YZTransparent.m */; };
+		92769FBC1EE8EB7900B7EF91 /* RedpacketLib.h in Public */ = {isa = PBXBuildFile; fileRef = 92769E671EE81A8D00B7EF91 /* RedpacketLib.h */; };
+		92769FC91EE8EBC800B7EF91 /* libRedpacketAliAuthAPILib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92769FBF1EE8EBC800B7EF91 /* libRedpacketAliAuthAPILib.a */; };
+		92769FCA1EE8EBD000B7EF91 /* RPRedpacketBridge.h in Public */ = {isa = PBXBuildFile; fileRef = 92769FC51EE8EBC800B7EF91 /* RPRedpacketBridge.h */; };
+		92769FCD1EE8EC0000B7EF91 /* RedpacketViewControl.h in Public */ = {isa = PBXBuildFile; fileRef = 92769E411EE81A8D00B7EF91 /* RedpacketViewControl.h */; };
+		92769FCE1EE8F9BE00B7EF91 /* RPUserInfo.h in Public */ = {isa = PBXBuildFile; fileRef = 92769FC41EE8EBC800B7EF91 /* RPUserInfo.h */; };
+		92769FCF1EE8F9C400B7EF91 /* RPAdvertInfo.h in Public */ = {isa = PBXBuildFile; fileRef = 92769FC11EE8EBC800B7EF91 /* RPAdvertInfo.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92769E211EE81A6C00B7EF91 /* Public */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/../RedPacketAliOpenUILib";
+			dstSubfolderSpec = 0;
+			files = (
+				92769FCE1EE8F9BE00B7EF91 /* RPUserInfo.h in Public */,
+				92769FCF1EE8F9C400B7EF91 /* RPAdvertInfo.h in Public */,
+				92769FCD1EE8EC0000B7EF91 /* RedpacketViewControl.h in Public */,
+				92769FBC1EE8EB7900B7EF91 /* RedpacketLib.h in Public */,
+				92769FCA1EE8EBD000B7EF91 /* RPRedpacketBridge.h in Public */,
+			);
+			name = Public;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		92769E231EE81A6C00B7EF91 /* libRedPacketAliAuthUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedPacketAliAuthUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92769E311EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeAdvertisementHandle.h; sourceTree = "<group>"; };
+		92769E321EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeAdvertisementHandle.m; sourceTree = "<group>"; };
+		92769E331EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeAmountHandle.h; sourceTree = "<group>"; };
+		92769E341EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeAmountHandle.m; sourceTree = "<group>"; };
+		92769E351EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeAvgHandle.h; sourceTree = "<group>"; };
+		92769E361EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeAvgHandle.m; sourceTree = "<group>"; };
+		92769E371EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeBaseHandle.h; sourceTree = "<group>"; };
+		92769E381EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeBaseHandle.m; sourceTree = "<group>"; };
+		92769E391EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeMemberHandle.h; sourceTree = "<group>"; };
+		92769E3A1EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeMemberHandle.m; sourceTree = "<group>"; };
+		92769E3B1EE81A8D00B7EF91 /* RedpacketTypeRandHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeRandHandle.h; sourceTree = "<group>"; };
+		92769E3C1EE81A8D00B7EF91 /* RedpacketTypeRandHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeRandHandle.m; sourceTree = "<group>"; };
+		92769E3D1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeRandpiHandle.h; sourceTree = "<group>"; };
+		92769E3E1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeRandpiHandle.m; sourceTree = "<group>"; };
+		92769E3F1EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeSingleHandle.h; sourceTree = "<group>"; };
+		92769E401EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeSingleHandle.m; sourceTree = "<group>"; };
+		92769E411EE81A8D00B7EF91 /* RedpacketViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketViewControl.h; sourceTree = "<group>"; };
+		92769E421EE81A8D00B7EF91 /* RedpacketViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketViewControl.m; sourceTree = "<group>"; };
+		92769E431EE81A8D00B7EF91 /* UIViewController+RP_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RP_Private.h"; sourceTree = "<group>"; };
+		92769E441EE81A8D00B7EF91 /* UIViewController+RP_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RP_Private.m"; sourceTree = "<group>"; };
+		92769E461EE81A8D00B7EF91 /* RPMemberRedpacketPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPMemberRedpacketPreView.h; sourceTree = "<group>"; };
+		92769E471EE81A8D00B7EF91 /* RPMemberRedpacketPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPMemberRedpacketPreView.m; sourceTree = "<group>"; };
+		92769E481EE81A8D00B7EF91 /* RPNormalRedpacketPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPNormalRedpacketPreView.h; sourceTree = "<group>"; };
+		92769E491EE81A8D00B7EF91 /* RPNormalRedpacketPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPNormalRedpacketPreView.m; sourceTree = "<group>"; };
+		92769E4A1EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPReceiveAmountRedpacketPreView.h; sourceTree = "<group>"; };
+		92769E4B1EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPReceiveAmountRedpacketPreView.m; sourceTree = "<group>"; };
+		92769E4C1EE81A8D00B7EF91 /* RPRedpacketPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketPreView.h; sourceTree = "<group>"; };
+		92769E4D1EE81A8D00B7EF91 /* RPRedpacketPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketPreView.m; sourceTree = "<group>"; };
+		92769E4E1EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendAmountRedpacketPreView.h; sourceTree = "<group>"; };
+		92769E4F1EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendAmountRedpacketPreView.m; sourceTree = "<group>"; };
+		92769E511EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPReceiptsInAlipayViewController.h; sourceTree = "<group>"; };
+		92769E521EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPReceiptsInAlipayViewController.m; sourceTree = "<group>"; };
+		92769E541EE81A8D00B7EF91 /* RPMyIncomeRedPacketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPMyIncomeRedPacketCell.h; sourceTree = "<group>"; };
+		92769E551EE81A8D00B7EF91 /* RPMyIncomeRedPacketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPMyIncomeRedPacketCell.m; sourceTree = "<group>"; };
+		92769E561EE81A8D00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPReceiotsInAlipayEmptyTableViewCell.h; sourceTree = "<group>"; };
+		92769E571EE81A8D00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPReceiotsInAlipayEmptyTableViewCell.m; sourceTree = "<group>"; };
+		92769E581EE81A8D00B7EF91 /* RPReceiotsInAlipayHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPReceiotsInAlipayHeaderView.h; sourceTree = "<group>"; };
+		92769E591EE81A8D00B7EF91 /* RPReceiotsInAlipayHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPReceiotsInAlipayHeaderView.m; sourceTree = "<group>"; };
+		92769E5C1EE81A8D00B7EF91 /* RedpacketDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketDetailCell.h; sourceTree = "<group>"; };
+		92769E5D1EE81A8D00B7EF91 /* RedpacketDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketDetailCell.m; sourceTree = "<group>"; };
+		92769E5E1EE81A8D00B7EF91 /* RedPacketDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPacketDetailViewController.h; sourceTree = "<group>"; };
+		92769E5F1EE81A8D00B7EF91 /* RedPacketDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPacketDetailViewController.m; sourceTree = "<group>"; };
+		92769E601EE81A8D00B7EF91 /* RPAdvertisementDetailViewContrroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAdvertisementDetailViewContrroller.h; sourceTree = "<group>"; };
+		92769E611EE81A8D00B7EF91 /* RPAdvertisementDetailViewContrroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAdvertisementDetailViewContrroller.m; sourceTree = "<group>"; };
+		92769E631EE81A8D00B7EF91 /* RPAdvertisementDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAdvertisementDetailView.h; sourceTree = "<group>"; };
+		92769E641EE81A8D00B7EF91 /* RPAdvertisementDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAdvertisementDetailView.m; sourceTree = "<group>"; };
+		92769E651EE81A8D00B7EF91 /* RPRedpacketDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketDetailHeaderView.h; sourceTree = "<group>"; };
+		92769E661EE81A8D00B7EF91 /* RPRedpacketDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketDetailHeaderView.m; sourceTree = "<group>"; };
+		92769E671EE81A8D00B7EF91 /* RedpacketLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketLib.h; sourceTree = "<group>"; };
+		92769E691EE81A8D00B7EF91 /* RPAliAuthPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAliAuthPay.h; sourceTree = "<group>"; };
+		92769E6A1EE81A8D00B7EF91 /* RPAliAuthPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAliAuthPay.m; sourceTree = "<group>"; };
+		92769E6B1EE81A8D00B7EF91 /* RPAlipayAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAlipayAuth.h; sourceTree = "<group>"; };
+		92769E6C1EE81A8D00B7EF91 /* RPAlipayAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAlipayAuth.m; sourceTree = "<group>"; };
+		92769E6D1EE81A8D00B7EF91 /* RPRedpacketSendControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketSendControl.h; sourceTree = "<group>"; };
+		92769E6E1EE81A8D00B7EF91 /* RPRedpacketSendControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketSendControl.m; sourceTree = "<group>"; };
+		92769E701EE81A8D00B7EF91 /* RPRedpacketViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketViews.h; sourceTree = "<group>"; };
+		92769E711EE81A8D00B7EF91 /* RPRedpacketViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketViews.m; sourceTree = "<group>"; };
+		92769E741EE81A8D00B7EF91 /* RPSendRedPacketCertainCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketCertainCellItem.h; sourceTree = "<group>"; };
+		92769E751EE81A8D00B7EF91 /* RPSendRedPacketCertainCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketCertainCellItem.m; sourceTree = "<group>"; };
+		92769E761EE81A8D00B7EF91 /* RPSendRedPacketChangeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketChangeCellItem.h; sourceTree = "<group>"; };
+		92769E771EE81A8D00B7EF91 /* RPSendRedPacketChangeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketChangeCellItem.m; sourceTree = "<group>"; };
+		92769E781EE81A8D00B7EF91 /* RPSendRedPacketCountCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketCountCellItem.h; sourceTree = "<group>"; };
+		92769E791EE81A8D00B7EF91 /* RPSendRedPacketCountCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketCountCellItem.m; sourceTree = "<group>"; };
+		92769E7A1EE81A8D00B7EF91 /* RPSendRedPacketDescribeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketDescribeCellItem.h; sourceTree = "<group>"; };
+		92769E7B1EE81A8D00B7EF91 /* RPSendRedPacketDescribeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketDescribeCellItem.m; sourceTree = "<group>"; };
+		92769E7C1EE81A8D00B7EF91 /* RPSendRedPacketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketItem.h; sourceTree = "<group>"; };
+		92769E7D1EE81A8D00B7EF91 /* RPSendRedPacketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketItem.m; sourceTree = "<group>"; };
+		92769E7E1EE81A8D00B7EF91 /* RPSendRedPacketMemberCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketMemberCellItem.h; sourceTree = "<group>"; };
+		92769E7F1EE81A8D00B7EF91 /* RPSendRedPacketMemberCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketMemberCellItem.m; sourceTree = "<group>"; };
+		92769E821EE81A8D00B7EF91 /* YZHChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHChineseString.h; sourceTree = "<group>"; };
+		92769E831EE81A8D00B7EF91 /* YZHChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHChineseString.m; sourceTree = "<group>"; };
+		92769E851EE81A8D00B7EF91 /* NSString+YZHPinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YZHPinYin4Cocoa.h"; sourceTree = "<group>"; };
+		92769E861EE81A8D00B7EF91 /* NSString+YZHPinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YZHPinYin4Cocoa.m"; sourceTree = "<group>"; };
+		92769E871EE81A8D00B7EF91 /* yzh_unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yzh_unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		92769E881EE81A8D00B7EF91 /* YZHChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHChineseInclude.h; sourceTree = "<group>"; };
+		92769E891EE81A8D00B7EF91 /* YZHChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHChineseInclude.m; sourceTree = "<group>"; };
+		92769E8A1EE81A8D00B7EF91 /* YZHChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHChineseToPinyinResource.h; sourceTree = "<group>"; };
+		92769E8B1EE81A8D00B7EF91 /* YZHChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHChineseToPinyinResource.m; sourceTree = "<group>"; };
+		92769E8C1EE81A8D00B7EF91 /* YZHHanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHHanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		92769E8D1EE81A8D00B7EF91 /* YZHHanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHHanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		92769E8E1EE81A8D00B7EF91 /* YZHPinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHPinyinFormatter.h; sourceTree = "<group>"; };
+		92769E8F1EE81A8D00B7EF91 /* YZHPinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHPinyinFormatter.m; sourceTree = "<group>"; };
+		92769E901EE81A8D00B7EF91 /* YZHPinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHPinYinForObjc.h; sourceTree = "<group>"; };
+		92769E911EE81A8D00B7EF91 /* YZHPinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHPinYinForObjc.m; sourceTree = "<group>"; };
+		92769E921EE81A8D00B7EF91 /* YZHPinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHPinyinHelper.h; sourceTree = "<group>"; };
+		92769E931EE81A8D00B7EF91 /* YZHPinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHPinyinHelper.m; sourceTree = "<group>"; };
+		92769E941EE81A8D00B7EF91 /* YZHZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHZYPinYinSearch.h; sourceTree = "<group>"; };
+		92769E951EE81A8D00B7EF91 /* YZHZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHZYPinYinSearch.m; sourceTree = "<group>"; };
+		92769E961EE81A8D00B7EF91 /* YZHHCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHHCHeader.h; sourceTree = "<group>"; };
+		92769E981EE81A8D00B7EF91 /* RPBaseCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBaseCellItem.h; sourceTree = "<group>"; };
+		92769E991EE81A8D00B7EF91 /* RPBaseCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBaseCellItem.m; sourceTree = "<group>"; };
+		92769E9A1EE81A8D00B7EF91 /* RPBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBaseTableView.h; sourceTree = "<group>"; };
+		92769E9B1EE81A8D00B7EF91 /* RPBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBaseTableView.m; sourceTree = "<group>"; };
+		92769E9C1EE81A8D00B7EF91 /* RPBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBaseTableViewCell.h; sourceTree = "<group>"; };
+		92769E9D1EE81A8D00B7EF91 /* RPBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBaseTableViewCell.m; sourceTree = "<group>"; };
+		92769E9E1EE81A8D00B7EF91 /* RPBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBaseTableViewController.h; sourceTree = "<group>"; };
+		92769E9F1EE81A8D00B7EF91 /* RPBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBaseTableViewController.m; sourceTree = "<group>"; };
+		92769EA01EE81A8D00B7EF91 /* RPSendAmountPacketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendAmountPacketViewController.h; sourceTree = "<group>"; };
+		92769EA11EE81A8D00B7EF91 /* RPSendAmountPacketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendAmountPacketViewController.m; sourceTree = "<group>"; };
+		92769EA21EE81A8D00B7EF91 /* RPSendRedPacketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketViewController.h; sourceTree = "<group>"; };
+		92769EA31EE81A8D00B7EF91 /* RPSendRedPacketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketViewController.m; sourceTree = "<group>"; };
+		92769EA41EE81A8D00B7EF91 /* SeachMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeachMemberCell.h; sourceTree = "<group>"; };
+		92769EA51EE81A8D00B7EF91 /* SeachMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachMemberCell.m; sourceTree = "<group>"; };
+		92769EA61EE81A8D00B7EF91 /* SearchMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMemberViewController.h; sourceTree = "<group>"; };
+		92769EA71EE81A8D00B7EF91 /* SearchMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMemberViewController.m; sourceTree = "<group>"; };
+		92769EA91EE81A8D00B7EF91 /* RPSendRedPacketBaseTableViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketBaseTableViewCellProtocol.h; sourceTree = "<group>"; };
+		92769EAA1EE81A8D00B7EF91 /* RPSendRedPacketCertainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketCertainTableViewCell.h; sourceTree = "<group>"; };
+		92769EAB1EE81A8D00B7EF91 /* RPSendRedPacketCertainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketCertainTableViewCell.m; sourceTree = "<group>"; };
+		92769EAC1EE81A8D00B7EF91 /* RPSendRedPacketChangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketChangeTableViewCell.h; sourceTree = "<group>"; };
+		92769EAD1EE81A8D00B7EF91 /* RPSendRedPacketChangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketChangeTableViewCell.m; sourceTree = "<group>"; };
+		92769EAE1EE81A8D00B7EF91 /* RPSendRedPacketCountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketCountTableViewCell.h; sourceTree = "<group>"; };
+		92769EAF1EE81A8D00B7EF91 /* RPSendRedPacketCountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketCountTableViewCell.m; sourceTree = "<group>"; };
+		92769EB01EE81A8D00B7EF91 /* RPSendRedPacketDescribeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketDescribeTableViewCell.h; sourceTree = "<group>"; };
+		92769EB11EE81A8D00B7EF91 /* RPSendRedPacketDescribeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketDescribeTableViewCell.m; sourceTree = "<group>"; };
+		92769EB21EE81A8D00B7EF91 /* RPSendRedPacketMemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketMemberTableViewCell.h; sourceTree = "<group>"; };
+		92769EB31EE81A8D00B7EF91 /* RPSendRedPacketMemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketMemberTableViewCell.m; sourceTree = "<group>"; };
+		92769EB41EE81A8D00B7EF91 /* RPSendRedPacketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketTableViewCell.h; sourceTree = "<group>"; };
+		92769EB51EE81A8D00B7EF91 /* RPSendRedPacketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketTableViewCell.m; sourceTree = "<group>"; };
+		92769EB81EE81A8D00B7EF91 /* AlipaySDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipaySDK.h; sourceTree = "<group>"; };
+		92769EB91EE81A8D00B7EF91 /* APayAuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APayAuthInfo.h; sourceTree = "<group>"; };
+		92769EBB1EE81A8D00B7EF91 /* YZHMBProgressHUD+YZHAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YZHMBProgressHUD+YZHAdd.h"; sourceTree = "<group>"; };
+		92769EBC1EE81A8D00B7EF91 /* YZHMBProgressHUD+YZHAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YZHMBProgressHUD+YZHAdd.m"; sourceTree = "<group>"; };
+		92769EBD1EE81A8D00B7EF91 /* YZHMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHMBProgressHUD.h; sourceTree = "<group>"; };
+		92769EBE1EE81A8D00B7EF91 /* YZHMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHMBProgressHUD.m; sourceTree = "<group>"; };
+		92769EC11EE81A8D00B7EF91 /* YZHRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshAutoFooter.h; sourceTree = "<group>"; };
+		92769EC21EE81A8D00B7EF91 /* YZHRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshAutoFooter.m; sourceTree = "<group>"; };
+		92769EC31EE81A8D00B7EF91 /* YZHRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshBackFooter.h; sourceTree = "<group>"; };
+		92769EC41EE81A8D00B7EF91 /* YZHRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshBackFooter.m; sourceTree = "<group>"; };
+		92769EC51EE81A8D00B7EF91 /* YZHRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshComponent.h; sourceTree = "<group>"; };
+		92769EC61EE81A8D00B7EF91 /* YZHRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshComponent.m; sourceTree = "<group>"; };
+		92769EC71EE81A8D00B7EF91 /* YZHRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshFooter.h; sourceTree = "<group>"; };
+		92769EC81EE81A8D00B7EF91 /* YZHRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshFooter.m; sourceTree = "<group>"; };
+		92769EC91EE81A8D00B7EF91 /* YZHRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshHeader.h; sourceTree = "<group>"; };
+		92769ECA1EE81A8D00B7EF91 /* YZHRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshHeader.m; sourceTree = "<group>"; };
+		92769ECE1EE81A8D00B7EF91 /* YZHRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		92769ECF1EE81A8D00B7EF91 /* YZHRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		92769ED01EE81A8D00B7EF91 /* YZHRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		92769ED11EE81A8D00B7EF91 /* YZHRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		92769ED21EE81A8D00B7EF91 /* YZHRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		92769ED31EE81A8D00B7EF91 /* YZHRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		92769ED51EE81A8D00B7EF91 /* YZHRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		92769ED61EE81A8D00B7EF91 /* YZHRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		92769ED71EE81A8D00B7EF91 /* YZHRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		92769ED81EE81A8D00B7EF91 /* YZHRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		92769ED91EE81A8D00B7EF91 /* YZHRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		92769EDA1EE81A8D00B7EF91 /* YZHRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		92769EDC1EE81A8D00B7EF91 /* YZHRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshGifHeader.h; sourceTree = "<group>"; };
+		92769EDD1EE81A8D00B7EF91 /* YZHRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshGifHeader.m; sourceTree = "<group>"; };
+		92769EDE1EE81A8D00B7EF91 /* YZHRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshNormalHeader.h; sourceTree = "<group>"; };
+		92769EDF1EE81A8D00B7EF91 /* YZHRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshNormalHeader.m; sourceTree = "<group>"; };
+		92769EE01EE81A8D00B7EF91 /* YZHRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshStateHeader.h; sourceTree = "<group>"; };
+		92769EE11EE81A8D00B7EF91 /* YZHRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshStateHeader.m; sourceTree = "<group>"; };
+		92769EE21EE81A8D00B7EF91 /* UIScrollView+YZHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YZHExtension.h"; sourceTree = "<group>"; };
+		92769EE31EE81A8D00B7EF91 /* UIScrollView+YZHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YZHExtension.m"; sourceTree = "<group>"; };
+		92769EE41EE81A8D00B7EF91 /* UIScrollView+YZHRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YZHRefresh.h"; sourceTree = "<group>"; };
+		92769EE51EE81A8D00B7EF91 /* UIScrollView+YZHRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YZHRefresh.m"; sourceTree = "<group>"; };
+		92769EE61EE81A8D00B7EF91 /* YZHRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YZHRefresh.bundle; sourceTree = "<group>"; };
+		92769EE71EE81A8D00B7EF91 /* YZHRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefresh.h; sourceTree = "<group>"; };
+		92769EE81EE81A8D00B7EF91 /* YZHRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHRefreshConst.h; sourceTree = "<group>"; };
+		92769EE91EE81A8D00B7EF91 /* YZHRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHRefreshConst.m; sourceTree = "<group>"; };
+		92769EEB1EE81A8D00B7EF91 /* NSData+YZHImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YZHImageContentType.h"; sourceTree = "<group>"; };
+		92769EEC1EE81A8D00B7EF91 /* NSData+YZHImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YZHImageContentType.m"; sourceTree = "<group>"; };
+		92769EED1EE81A8D00B7EF91 /* UIImage+YZHGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZHGIF.h"; sourceTree = "<group>"; };
+		92769EEE1EE81A8D00B7EF91 /* UIImage+YZHGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YZHGIF.m"; sourceTree = "<group>"; };
+		92769EEF1EE81A8D00B7EF91 /* UIImage+YZHMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZHMultiFormat.h"; sourceTree = "<group>"; };
+		92769EF01EE81A8D00B7EF91 /* UIImage+YZHMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YZHMultiFormat.m"; sourceTree = "<group>"; };
+		92769EF11EE81A8D00B7EF91 /* UIImageView+YZHWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YZHWebCache.h"; sourceTree = "<group>"; };
+		92769EF21EE81A8D00B7EF91 /* UIImageView+YZHWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YZHWebCache.m"; sourceTree = "<group>"; };
+		92769EF31EE81A8D00B7EF91 /* UIView+YZHWebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHWebCacheOperation.h"; sourceTree = "<group>"; };
+		92769EF41EE81A8D00B7EF91 /* UIView+YZHWebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHWebCacheOperation.m"; sourceTree = "<group>"; };
+		92769EF51EE81A8D00B7EF91 /* YZHSDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDImageCache.h; sourceTree = "<group>"; };
+		92769EF61EE81A8D00B7EF91 /* YZHSDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDImageCache.m; sourceTree = "<group>"; };
+		92769EF71EE81A8D00B7EF91 /* YZHSDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageCompat.h; sourceTree = "<group>"; };
+		92769EF81EE81A8D00B7EF91 /* YZHSDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImageCompat.m; sourceTree = "<group>"; };
+		92769EF91EE81A8D00B7EF91 /* YZHSDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageDecoder.h; sourceTree = "<group>"; };
+		92769EFA1EE81A8D00B7EF91 /* YZHSDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImageDecoder.m; sourceTree = "<group>"; };
+		92769EFB1EE81A8D00B7EF91 /* YZHSDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageDownloader.h; sourceTree = "<group>"; };
+		92769EFC1EE81A8D00B7EF91 /* YZHSDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImageDownloader.m; sourceTree = "<group>"; };
+		92769EFD1EE81A8D00B7EF91 /* YZHSDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		92769EFE1EE81A8D00B7EF91 /* YZHSDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		92769EFF1EE81A8D00B7EF91 /* YZHSDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageManager.h; sourceTree = "<group>"; };
+		92769F001EE81A8D00B7EF91 /* YZHSDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImageManager.m; sourceTree = "<group>"; };
+		92769F011EE81A8D00B7EF91 /* YZHSDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImageOperation.h; sourceTree = "<group>"; };
+		92769F021EE81A8D00B7EF91 /* YZHSDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHSDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		92769F031EE81A8D00B7EF91 /* YZHSDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHSDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		92769F061EE81A8D00B7EF91 /* NSBundle+RedpacketBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RedpacketBundle.h"; sourceTree = "<group>"; };
+		92769F071EE81A8D00B7EF91 /* NSBundle+RedpacketBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RedpacketBundle.m"; sourceTree = "<group>"; };
+		92769F081EE81A8D00B7EF91 /* RedpacketColorStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketColorStore.h; sourceTree = "<group>"; };
+		92769F091EE81A8D00B7EF91 /* RedpacketColorStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketColorStore.m; sourceTree = "<group>"; };
+		92769F0A1EE81A8D00B7EF91 /* UIAlertView+YZHAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+YZHAlert.h"; sourceTree = "<group>"; };
+		92769F0B1EE81A8D00B7EF91 /* UIAlertView+YZHAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+YZHAlert.m"; sourceTree = "<group>"; };
+		92769F0C1EE81A8D00B7EF91 /* UIButton+RPAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RPAction.h"; sourceTree = "<group>"; };
+		92769F0D1EE81A8D00B7EF91 /* UIButton+RPAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RPAction.m"; sourceTree = "<group>"; };
+		92769F0E1EE81A8D00B7EF91 /* UIColor+RedpacketColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RedpacketColors.h"; sourceTree = "<group>"; };
+		92769F0F1EE81A8D00B7EF91 /* UIColor+RedpacketColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RedpacketColors.m"; sourceTree = "<group>"; };
+		92769F101EE81A8D00B7EF91 /* UIView+YZHAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHAnimation.h"; sourceTree = "<group>"; };
+		92769F111EE81A8D00B7EF91 /* UIView+YZHAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHAnimation.m"; sourceTree = "<group>"; };
+		92769F121EE81A8D00B7EF91 /* UIView+YZHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHExtension.h"; sourceTree = "<group>"; };
+		92769F131EE81A8D00B7EF91 /* UIView+YZHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHExtension.m"; sourceTree = "<group>"; };
+		92769F141EE81A8D00B7EF91 /* UIView+YZHPrompting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHPrompting.h"; sourceTree = "<group>"; };
+		92769F151EE81A8D00B7EF91 /* UIView+YZHPrompting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHPrompting.m"; sourceTree = "<group>"; };
+		92769F171EE81A8D00B7EF91 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		92769F181EE81A8D00B7EF91 /* NSArray+RPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RPAdditions.h"; sourceTree = "<group>"; };
+		92769F191EE81A8D00B7EF91 /* NSArray+RPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RPAdditions.m"; sourceTree = "<group>"; };
+		92769F1A1EE81A8D00B7EF91 /* RPCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCompositeConstraint.h; sourceTree = "<group>"; };
+		92769F1B1EE81A8D00B7EF91 /* RPCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCompositeConstraint.m; sourceTree = "<group>"; };
+		92769F1C1EE81A8D00B7EF91 /* RPConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RPConstraint+Private.h"; sourceTree = "<group>"; };
+		92769F1D1EE81A8D00B7EF91 /* RPConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPConstraint.h; sourceTree = "<group>"; };
+		92769F1E1EE81A8D00B7EF91 /* RPConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPConstraint.m; sourceTree = "<group>"; };
+		92769F1F1EE81A8D00B7EF91 /* RPConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPConstraintMaker.h; sourceTree = "<group>"; };
+		92769F201EE81A8D00B7EF91 /* RPConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPConstraintMaker.m; sourceTree = "<group>"; };
+		92769F211EE81A8D00B7EF91 /* RPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLayout.h; sourceTree = "<group>"; };
+		92769F221EE81A8D00B7EF91 /* RPLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLayoutConstraint.h; sourceTree = "<group>"; };
+		92769F231EE81A8D00B7EF91 /* RPLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLayoutConstraint.m; sourceTree = "<group>"; };
+		92769F241EE81A8D00B7EF91 /* RPUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUtilities.h; sourceTree = "<group>"; };
+		92769F251EE81A8D00B7EF91 /* RPViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPViewAttribute.h; sourceTree = "<group>"; };
+		92769F261EE81A8D00B7EF91 /* RPViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPViewAttribute.m; sourceTree = "<group>"; };
+		92769F271EE81A8D00B7EF91 /* RPViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPViewConstraint.h; sourceTree = "<group>"; };
+		92769F281EE81A8D00B7EF91 /* RPViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPViewConstraint.m; sourceTree = "<group>"; };
+		92769F291EE81A8D00B7EF91 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		92769F2A1EE81A8D00B7EF91 /* View+RPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+RPAdditions.h"; sourceTree = "<group>"; };
+		92769F2B1EE81A8D00B7EF91 /* View+RPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+RPAdditions.m"; sourceTree = "<group>"; };
+		92769F2C1EE81A8D00B7EF91 /* RedpacketErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketErrorView.h; sourceTree = "<group>"; };
+		92769F2D1EE81A8D00B7EF91 /* RedpacketErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketErrorView.m; sourceTree = "<group>"; };
+		92769F2E1EE81A8D00B7EF91 /* RPAliPayEmpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAliPayEmpower.h; sourceTree = "<group>"; };
+		92769F2F1EE81A8D00B7EF91 /* RPAliPayEmpower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPAliPayEmpower.m; sourceTree = "<group>"; };
+		92769F301EE81A8D00B7EF91 /* RPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBaseViewController.h; sourceTree = "<group>"; };
+		92769F311EE81A8D00B7EF91 /* RPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBaseViewController.m; sourceTree = "<group>"; };
+		92769F321EE81A8D00B7EF91 /* RPRedpackeNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpackeNavgationController.h; sourceTree = "<group>"; };
+		92769F331EE81A8D00B7EF91 /* RPRedpackeNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpackeNavgationController.m; sourceTree = "<group>"; };
+		92769F341EE81A8D00B7EF91 /* RPRedpacketDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketDefines.h; sourceTree = "<group>"; };
+		92769F351EE81A8D00B7EF91 /* RPRedpacketTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketTool.h; sourceTree = "<group>"; };
+		92769F361EE81A8D00B7EF91 /* RPRedpacketTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRedpacketTool.m; sourceTree = "<group>"; };
+		92769F371EE81A8D00B7EF91 /* RPRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRefreshTableViewController.h; sourceTree = "<group>"; };
+		92769F381EE81A8D00B7EF91 /* RPRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRefreshTableViewController.m; sourceTree = "<group>"; };
+		92769F391EE81A8D00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSendRedPacketAutoKeyboardHandle.h; sourceTree = "<group>"; };
+		92769F3A1EE81A8D00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSendRedPacketAutoKeyboardHandle.m; sourceTree = "<group>"; };
+		92769F3B1EE81A8D00B7EF91 /* RPSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSoundPlayer.h; sourceTree = "<group>"; };
+		92769F3C1EE81A8D00B7EF91 /* RPSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSoundPlayer.m; sourceTree = "<group>"; };
+		92769F3D1EE81A8D00B7EF91 /* RPUntility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUntility.h; sourceTree = "<group>"; };
+		92769F3E1EE81A8D00B7EF91 /* RPUntility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPUntility.m; sourceTree = "<group>"; };
+		92769F401EE81A8D00B7EF91 /* PlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHolderTextView.h; sourceTree = "<group>"; };
+		92769F411EE81A8D00B7EF91 /* PlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderTextView.m; sourceTree = "<group>"; };
+		92769F421EE81A8D00B7EF91 /* YZTransparent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTransparent.h; sourceTree = "<group>"; };
+		92769F431EE81A8D00B7EF91 /* YZTransparent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTransparent.m; sourceTree = "<group>"; };
+		92769FBF1EE8EBC800B7EF91 /* libRedpacketAliAuthAPILib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedpacketAliAuthAPILib.a; sourceTree = "<group>"; };
+		92769FC11EE8EBC800B7EF91 /* RPAdvertInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAdvertInfo.h; sourceTree = "<group>"; };
+		92769FC21EE8EBC800B7EF91 /* RPPersonalRedpacketInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPPersonalRedpacketInfo.h; sourceTree = "<group>"; };
+		92769FC31EE8EBC800B7EF91 /* RPRedpacketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketModel.h; sourceTree = "<group>"; };
+		92769FC41EE8EBC800B7EF91 /* RPUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUserInfo.h; sourceTree = "<group>"; };
+		92769FC51EE8EBC800B7EF91 /* RPRedpacketBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketBridge.h; sourceTree = "<group>"; };
+		92769FC61EE8EBC800B7EF91 /* RPRedpacketErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketErrorCode.h; sourceTree = "<group>"; };
+		92769FC71EE8EBC800B7EF91 /* RPRedpacketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketManager.h; sourceTree = "<group>"; };
+		92769FC81EE8EBC800B7EF91 /* RPRedpacketSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketSetting.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92769E201EE81A6C00B7EF91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92769FC91EE8EBC800B7EF91 /* libRedpacketAliAuthAPILib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92769E1A1EE81A6C00B7EF91 = {
+			isa = PBXGroup;
+			children = (
+				92769FBD1EE8EBC800B7EF91 /* RedpacketAliAuthAPILib */,
+				92769E2F1EE81A8D00B7EF91 /* RedPacketAliAuthUI */,
+				92769E241EE81A6C00B7EF91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92769E241EE81A6C00B7EF91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92769E231EE81A6C00B7EF91 /* libRedPacketAliAuthUI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92769E2F1EE81A8D00B7EF91 /* RedPacketAliAuthUI */ = {
+			isa = PBXGroup;
+			children = (
+				92769E671EE81A8D00B7EF91 /* RedpacketLib.h */,
+				92769E301EE81A8D00B7EF91 /* RedpacketViewController */,
+				92769E501EE81A8D00B7EF91 /* MyInComeRedPacketViewController */,
+				92769E5A1EE81A8D00B7EF91 /* RedpacketDetailController */,
+				92769E681EE81A8D00B7EF91 /* RedpacketPayControl */,
+				92769E6F1EE81A8D00B7EF91 /* RPRedpacketVIews */,
+				92769E721EE81A8D00B7EF91 /* SendRedPacketViewController */,
+				92769EB61EE81A8D00B7EF91 /* ThirdPart */,
+				92769F041EE81A8D00B7EF91 /* Tools */,
+			);
+			path = RedPacketAliAuthUI;
+			sourceTree = "<group>";
+		};
+		92769E301EE81A8D00B7EF91 /* RedpacketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92769E311EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.h */,
+				92769E321EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m */,
+				92769E331EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.h */,
+				92769E341EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m */,
+				92769E351EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.h */,
+				92769E361EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m */,
+				92769E371EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.h */,
+				92769E381EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.m */,
+				92769E391EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.h */,
+				92769E3A1EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.m */,
+				92769E3B1EE81A8D00B7EF91 /* RedpacketTypeRandHandle.h */,
+				92769E3C1EE81A8D00B7EF91 /* RedpacketTypeRandHandle.m */,
+				92769E3D1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.h */,
+				92769E3E1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.m */,
+				92769E3F1EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.h */,
+				92769E401EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.m */,
+				92769E411EE81A8D00B7EF91 /* RedpacketViewControl.h */,
+				92769E421EE81A8D00B7EF91 /* RedpacketViewControl.m */,
+				92769E431EE81A8D00B7EF91 /* UIViewController+RP_Private.h */,
+				92769E441EE81A8D00B7EF91 /* UIViewController+RP_Private.m */,
+				92769E451EE81A8D00B7EF91 /* Views */,
+			);
+			name = RedpacketViewController;
+			path = ChatRedpacketViewController;
+			sourceTree = "<group>";
+		};
+		92769E451EE81A8D00B7EF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92769E461EE81A8D00B7EF91 /* RPMemberRedpacketPreView.h */,
+				92769E471EE81A8D00B7EF91 /* RPMemberRedpacketPreView.m */,
+				92769E481EE81A8D00B7EF91 /* RPNormalRedpacketPreView.h */,
+				92769E491EE81A8D00B7EF91 /* RPNormalRedpacketPreView.m */,
+				92769E4A1EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.h */,
+				92769E4B1EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.m */,
+				92769E4C1EE81A8D00B7EF91 /* RPRedpacketPreView.h */,
+				92769E4D1EE81A8D00B7EF91 /* RPRedpacketPreView.m */,
+				92769E4E1EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.h */,
+				92769E4F1EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92769E501EE81A8D00B7EF91 /* MyInComeRedPacketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92769E511EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.h */,
+				92769E521EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.m */,
+				92769E531EE81A8D00B7EF91 /* Views */,
+			);
+			path = MyInComeRedPacketViewController;
+			sourceTree = "<group>";
+		};
+		92769E531EE81A8D00B7EF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92769E541EE81A8D00B7EF91 /* RPMyIncomeRedPacketCell.h */,
+				92769E551EE81A8D00B7EF91 /* RPMyIncomeRedPacketCell.m */,
+				92769E561EE81A8D00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.h */,
+				92769E571EE81A8D00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.m */,
+				92769E581EE81A8D00B7EF91 /* RPReceiotsInAlipayHeaderView.h */,
+				92769E591EE81A8D00B7EF91 /* RPReceiotsInAlipayHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92769E5A1EE81A8D00B7EF91 /* RedpacketDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				92769E5B1EE81A8D00B7EF91 /* Cells */,
+				92769E5E1EE81A8D00B7EF91 /* RedPacketDetailViewController.h */,
+				92769E5F1EE81A8D00B7EF91 /* RedPacketDetailViewController.m */,
+				92769E601EE81A8D00B7EF91 /* RPAdvertisementDetailViewContrroller.h */,
+				92769E611EE81A8D00B7EF91 /* RPAdvertisementDetailViewContrroller.m */,
+				92769E621EE81A8D00B7EF91 /* Views */,
+			);
+			path = RedpacketDetailController;
+			sourceTree = "<group>";
+		};
+		92769E5B1EE81A8D00B7EF91 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92769E5C1EE81A8D00B7EF91 /* RedpacketDetailCell.h */,
+				92769E5D1EE81A8D00B7EF91 /* RedpacketDetailCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92769E621EE81A8D00B7EF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92769E631EE81A8D00B7EF91 /* RPAdvertisementDetailView.h */,
+				92769E641EE81A8D00B7EF91 /* RPAdvertisementDetailView.m */,
+				92769E651EE81A8D00B7EF91 /* RPRedpacketDetailHeaderView.h */,
+				92769E661EE81A8D00B7EF91 /* RPRedpacketDetailHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92769E681EE81A8D00B7EF91 /* RedpacketPayControl */ = {
+			isa = PBXGroup;
+			children = (
+				92769E691EE81A8D00B7EF91 /* RPAliAuthPay.h */,
+				92769E6A1EE81A8D00B7EF91 /* RPAliAuthPay.m */,
+				92769E6B1EE81A8D00B7EF91 /* RPAlipayAuth.h */,
+				92769E6C1EE81A8D00B7EF91 /* RPAlipayAuth.m */,
+				92769E6D1EE81A8D00B7EF91 /* RPRedpacketSendControl.h */,
+				92769E6E1EE81A8D00B7EF91 /* RPRedpacketSendControl.m */,
+			);
+			path = RedpacketPayControl;
+			sourceTree = "<group>";
+		};
+		92769E6F1EE81A8D00B7EF91 /* RPRedpacketVIews */ = {
+			isa = PBXGroup;
+			children = (
+				92769E701EE81A8D00B7EF91 /* RPRedpacketViews.h */,
+				92769E711EE81A8D00B7EF91 /* RPRedpacketViews.m */,
+			);
+			path = RPRedpacketVIews;
+			sourceTree = "<group>";
+		};
+		92769E721EE81A8D00B7EF91 /* SendRedPacketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92769E731EE81A8D00B7EF91 /* CellItem */,
+				92769E801EE81A8D00B7EF91 /* HCSearch */,
+				92769E971EE81A8D00B7EF91 /* Public */,
+				92769EA01EE81A8D00B7EF91 /* RPSendAmountPacketViewController.h */,
+				92769EA11EE81A8D00B7EF91 /* RPSendAmountPacketViewController.m */,
+				92769EA21EE81A8D00B7EF91 /* RPSendRedPacketViewController.h */,
+				92769EA31EE81A8D00B7EF91 /* RPSendRedPacketViewController.m */,
+				92769EA41EE81A8D00B7EF91 /* SeachMemberCell.h */,
+				92769EA51EE81A8D00B7EF91 /* SeachMemberCell.m */,
+				92769EA61EE81A8D00B7EF91 /* SearchMemberViewController.h */,
+				92769EA71EE81A8D00B7EF91 /* SearchMemberViewController.m */,
+				92769EA81EE81A8D00B7EF91 /* Views */,
+			);
+			path = SendRedPacketViewController;
+			sourceTree = "<group>";
+		};
+		92769E731EE81A8D00B7EF91 /* CellItem */ = {
+			isa = PBXGroup;
+			children = (
+				92769E741EE81A8D00B7EF91 /* RPSendRedPacketCertainCellItem.h */,
+				92769E751EE81A8D00B7EF91 /* RPSendRedPacketCertainCellItem.m */,
+				92769E761EE81A8D00B7EF91 /* RPSendRedPacketChangeCellItem.h */,
+				92769E771EE81A8D00B7EF91 /* RPSendRedPacketChangeCellItem.m */,
+				92769E781EE81A8D00B7EF91 /* RPSendRedPacketCountCellItem.h */,
+				92769E791EE81A8D00B7EF91 /* RPSendRedPacketCountCellItem.m */,
+				92769E7A1EE81A8D00B7EF91 /* RPSendRedPacketDescribeCellItem.h */,
+				92769E7B1EE81A8D00B7EF91 /* RPSendRedPacketDescribeCellItem.m */,
+				92769E7C1EE81A8D00B7EF91 /* RPSendRedPacketItem.h */,
+				92769E7D1EE81A8D00B7EF91 /* RPSendRedPacketItem.m */,
+				92769E7E1EE81A8D00B7EF91 /* RPSendRedPacketMemberCellItem.h */,
+				92769E7F1EE81A8D00B7EF91 /* RPSendRedPacketMemberCellItem.m */,
+			);
+			path = CellItem;
+			sourceTree = "<group>";
+		};
+		92769E801EE81A8D00B7EF91 /* HCSearch */ = {
+			isa = PBXGroup;
+			children = (
+				92769E811EE81A8D00B7EF91 /* LetterGroups */,
+				92769E841EE81A8D00B7EF91 /* PinYinSearchLib */,
+				92769E961EE81A8D00B7EF91 /* YZHHCHeader.h */,
+			);
+			path = HCSearch;
+			sourceTree = "<group>";
+		};
+		92769E811EE81A8D00B7EF91 /* LetterGroups */ = {
+			isa = PBXGroup;
+			children = (
+				92769E821EE81A8D00B7EF91 /* YZHChineseString.h */,
+				92769E831EE81A8D00B7EF91 /* YZHChineseString.m */,
+			);
+			path = LetterGroups;
+			sourceTree = "<group>";
+		};
+		92769E841EE81A8D00B7EF91 /* PinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				92769E851EE81A8D00B7EF91 /* NSString+YZHPinYin4Cocoa.h */,
+				92769E861EE81A8D00B7EF91 /* NSString+YZHPinYin4Cocoa.m */,
+				92769E871EE81A8D00B7EF91 /* yzh_unicode_to_hanyu_pinyin.txt */,
+				92769E881EE81A8D00B7EF91 /* YZHChineseInclude.h */,
+				92769E891EE81A8D00B7EF91 /* YZHChineseInclude.m */,
+				92769E8A1EE81A8D00B7EF91 /* YZHChineseToPinyinResource.h */,
+				92769E8B1EE81A8D00B7EF91 /* YZHChineseToPinyinResource.m */,
+				92769E8C1EE81A8D00B7EF91 /* YZHHanyuPinyinOutputFormat.h */,
+				92769E8D1EE81A8D00B7EF91 /* YZHHanyuPinyinOutputFormat.m */,
+				92769E8E1EE81A8D00B7EF91 /* YZHPinyinFormatter.h */,
+				92769E8F1EE81A8D00B7EF91 /* YZHPinyinFormatter.m */,
+				92769E901EE81A8D00B7EF91 /* YZHPinYinForObjc.h */,
+				92769E911EE81A8D00B7EF91 /* YZHPinYinForObjc.m */,
+				92769E921EE81A8D00B7EF91 /* YZHPinyinHelper.h */,
+				92769E931EE81A8D00B7EF91 /* YZHPinyinHelper.m */,
+				92769E941EE81A8D00B7EF91 /* YZHZYPinYinSearch.h */,
+				92769E951EE81A8D00B7EF91 /* YZHZYPinYinSearch.m */,
+			);
+			path = PinYinSearchLib;
+			sourceTree = "<group>";
+		};
+		92769E971EE81A8D00B7EF91 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				92769E981EE81A8D00B7EF91 /* RPBaseCellItem.h */,
+				92769E991EE81A8D00B7EF91 /* RPBaseCellItem.m */,
+				92769E9A1EE81A8D00B7EF91 /* RPBaseTableView.h */,
+				92769E9B1EE81A8D00B7EF91 /* RPBaseTableView.m */,
+				92769E9C1EE81A8D00B7EF91 /* RPBaseTableViewCell.h */,
+				92769E9D1EE81A8D00B7EF91 /* RPBaseTableViewCell.m */,
+				92769E9E1EE81A8D00B7EF91 /* RPBaseTableViewController.h */,
+				92769E9F1EE81A8D00B7EF91 /* RPBaseTableViewController.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		92769EA81EE81A8D00B7EF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92769EA91EE81A8D00B7EF91 /* RPSendRedPacketBaseTableViewCellProtocol.h */,
+				92769EAA1EE81A8D00B7EF91 /* RPSendRedPacketCertainTableViewCell.h */,
+				92769EAB1EE81A8D00B7EF91 /* RPSendRedPacketCertainTableViewCell.m */,
+				92769EAC1EE81A8D00B7EF91 /* RPSendRedPacketChangeTableViewCell.h */,
+				92769EAD1EE81A8D00B7EF91 /* RPSendRedPacketChangeTableViewCell.m */,
+				92769EAE1EE81A8D00B7EF91 /* RPSendRedPacketCountTableViewCell.h */,
+				92769EAF1EE81A8D00B7EF91 /* RPSendRedPacketCountTableViewCell.m */,
+				92769EB01EE81A8D00B7EF91 /* RPSendRedPacketDescribeTableViewCell.h */,
+				92769EB11EE81A8D00B7EF91 /* RPSendRedPacketDescribeTableViewCell.m */,
+				92769EB21EE81A8D00B7EF91 /* RPSendRedPacketMemberTableViewCell.h */,
+				92769EB31EE81A8D00B7EF91 /* RPSendRedPacketMemberTableViewCell.m */,
+				92769EB41EE81A8D00B7EF91 /* RPSendRedPacketTableViewCell.h */,
+				92769EB51EE81A8D00B7EF91 /* RPSendRedPacketTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92769EB61EE81A8D00B7EF91 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				92769EB71EE81A8D00B7EF91 /* AliPay */,
+				92769EBA1EE81A8D00B7EF91 /* MBProgressHUD */,
+				92769EBF1EE81A8D00B7EF91 /* MJRefresh */,
+				92769EEA1EE81A8D00B7EF91 /* SDWebImage */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		92769EB71EE81A8D00B7EF91 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				92769EB81EE81A8D00B7EF91 /* AlipaySDK.h */,
+				92769EB91EE81A8D00B7EF91 /* APayAuthInfo.h */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		92769EBA1EE81A8D00B7EF91 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				92769EBB1EE81A8D00B7EF91 /* YZHMBProgressHUD+YZHAdd.h */,
+				92769EBC1EE81A8D00B7EF91 /* YZHMBProgressHUD+YZHAdd.m */,
+				92769EBD1EE81A8D00B7EF91 /* YZHMBProgressHUD.h */,
+				92769EBE1EE81A8D00B7EF91 /* YZHMBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		92769EBF1EE81A8D00B7EF91 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				92769EC01EE81A8D00B7EF91 /* Base */,
+				92769ECB1EE81A8D00B7EF91 /* Custom */,
+				92769EE21EE81A8D00B7EF91 /* UIScrollView+YZHExtension.h */,
+				92769EE31EE81A8D00B7EF91 /* UIScrollView+YZHExtension.m */,
+				92769EE41EE81A8D00B7EF91 /* UIScrollView+YZHRefresh.h */,
+				92769EE51EE81A8D00B7EF91 /* UIScrollView+YZHRefresh.m */,
+				92769EE61EE81A8D00B7EF91 /* YZHRefresh.bundle */,
+				92769EE71EE81A8D00B7EF91 /* YZHRefresh.h */,
+				92769EE81EE81A8D00B7EF91 /* YZHRefreshConst.h */,
+				92769EE91EE81A8D00B7EF91 /* YZHRefreshConst.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		92769EC01EE81A8D00B7EF91 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				92769EC11EE81A8D00B7EF91 /* YZHRefreshAutoFooter.h */,
+				92769EC21EE81A8D00B7EF91 /* YZHRefreshAutoFooter.m */,
+				92769EC31EE81A8D00B7EF91 /* YZHRefreshBackFooter.h */,
+				92769EC41EE81A8D00B7EF91 /* YZHRefreshBackFooter.m */,
+				92769EC51EE81A8D00B7EF91 /* YZHRefreshComponent.h */,
+				92769EC61EE81A8D00B7EF91 /* YZHRefreshComponent.m */,
+				92769EC71EE81A8D00B7EF91 /* YZHRefreshFooter.h */,
+				92769EC81EE81A8D00B7EF91 /* YZHRefreshFooter.m */,
+				92769EC91EE81A8D00B7EF91 /* YZHRefreshHeader.h */,
+				92769ECA1EE81A8D00B7EF91 /* YZHRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		92769ECB1EE81A8D00B7EF91 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				92769ECC1EE81A8D00B7EF91 /* Footer */,
+				92769EDB1EE81A8D00B7EF91 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		92769ECC1EE81A8D00B7EF91 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				92769ECD1EE81A8D00B7EF91 /* Auto */,
+				92769ED41EE81A8D00B7EF91 /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		92769ECD1EE81A8D00B7EF91 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				92769ECE1EE81A8D00B7EF91 /* YZHRefreshAutoGifFooter.h */,
+				92769ECF1EE81A8D00B7EF91 /* YZHRefreshAutoGifFooter.m */,
+				92769ED01EE81A8D00B7EF91 /* YZHRefreshAutoNormalFooter.h */,
+				92769ED11EE81A8D00B7EF91 /* YZHRefreshAutoNormalFooter.m */,
+				92769ED21EE81A8D00B7EF91 /* YZHRefreshAutoStateFooter.h */,
+				92769ED31EE81A8D00B7EF91 /* YZHRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		92769ED41EE81A8D00B7EF91 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				92769ED51EE81A8D00B7EF91 /* YZHRefreshBackGifFooter.h */,
+				92769ED61EE81A8D00B7EF91 /* YZHRefreshBackGifFooter.m */,
+				92769ED71EE81A8D00B7EF91 /* YZHRefreshBackNormalFooter.h */,
+				92769ED81EE81A8D00B7EF91 /* YZHRefreshBackNormalFooter.m */,
+				92769ED91EE81A8D00B7EF91 /* YZHRefreshBackStateFooter.h */,
+				92769EDA1EE81A8D00B7EF91 /* YZHRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		92769EDB1EE81A8D00B7EF91 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				92769EDC1EE81A8D00B7EF91 /* YZHRefreshGifHeader.h */,
+				92769EDD1EE81A8D00B7EF91 /* YZHRefreshGifHeader.m */,
+				92769EDE1EE81A8D00B7EF91 /* YZHRefreshNormalHeader.h */,
+				92769EDF1EE81A8D00B7EF91 /* YZHRefreshNormalHeader.m */,
+				92769EE01EE81A8D00B7EF91 /* YZHRefreshStateHeader.h */,
+				92769EE11EE81A8D00B7EF91 /* YZHRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		92769EEA1EE81A8D00B7EF91 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				92769EEB1EE81A8D00B7EF91 /* NSData+YZHImageContentType.h */,
+				92769EEC1EE81A8D00B7EF91 /* NSData+YZHImageContentType.m */,
+				92769EED1EE81A8D00B7EF91 /* UIImage+YZHGIF.h */,
+				92769EEE1EE81A8D00B7EF91 /* UIImage+YZHGIF.m */,
+				92769EEF1EE81A8D00B7EF91 /* UIImage+YZHMultiFormat.h */,
+				92769EF01EE81A8D00B7EF91 /* UIImage+YZHMultiFormat.m */,
+				92769EF11EE81A8D00B7EF91 /* UIImageView+YZHWebCache.h */,
+				92769EF21EE81A8D00B7EF91 /* UIImageView+YZHWebCache.m */,
+				92769EF31EE81A8D00B7EF91 /* UIView+YZHWebCacheOperation.h */,
+				92769EF41EE81A8D00B7EF91 /* UIView+YZHWebCacheOperation.m */,
+				92769EF51EE81A8D00B7EF91 /* YZHSDImageCache.h */,
+				92769EF61EE81A8D00B7EF91 /* YZHSDImageCache.m */,
+				92769EF71EE81A8D00B7EF91 /* YZHSDWebImageCompat.h */,
+				92769EF81EE81A8D00B7EF91 /* YZHSDWebImageCompat.m */,
+				92769EF91EE81A8D00B7EF91 /* YZHSDWebImageDecoder.h */,
+				92769EFA1EE81A8D00B7EF91 /* YZHSDWebImageDecoder.m */,
+				92769EFB1EE81A8D00B7EF91 /* YZHSDWebImageDownloader.h */,
+				92769EFC1EE81A8D00B7EF91 /* YZHSDWebImageDownloader.m */,
+				92769EFD1EE81A8D00B7EF91 /* YZHSDWebImageDownloaderOperation.h */,
+				92769EFE1EE81A8D00B7EF91 /* YZHSDWebImageDownloaderOperation.m */,
+				92769EFF1EE81A8D00B7EF91 /* YZHSDWebImageManager.h */,
+				92769F001EE81A8D00B7EF91 /* YZHSDWebImageManager.m */,
+				92769F011EE81A8D00B7EF91 /* YZHSDWebImageOperation.h */,
+				92769F021EE81A8D00B7EF91 /* YZHSDWebImagePrefetcher.h */,
+				92769F031EE81A8D00B7EF91 /* YZHSDWebImagePrefetcher.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		92769F041EE81A8D00B7EF91 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				92769F051EE81A8D00B7EF91 /* Category */,
+				92769F161EE81A8D00B7EF91 /* Layout */,
+				92769F2C1EE81A8D00B7EF91 /* RedpacketErrorView.h */,
+				92769F2D1EE81A8D00B7EF91 /* RedpacketErrorView.m */,
+				92769F2E1EE81A8D00B7EF91 /* RPAliPayEmpower.h */,
+				92769F2F1EE81A8D00B7EF91 /* RPAliPayEmpower.m */,
+				92769F301EE81A8D00B7EF91 /* RPBaseViewController.h */,
+				92769F311EE81A8D00B7EF91 /* RPBaseViewController.m */,
+				92769F321EE81A8D00B7EF91 /* RPRedpackeNavgationController.h */,
+				92769F331EE81A8D00B7EF91 /* RPRedpackeNavgationController.m */,
+				92769F341EE81A8D00B7EF91 /* RPRedpacketDefines.h */,
+				92769F351EE81A8D00B7EF91 /* RPRedpacketTool.h */,
+				92769F361EE81A8D00B7EF91 /* RPRedpacketTool.m */,
+				92769F371EE81A8D00B7EF91 /* RPRefreshTableViewController.h */,
+				92769F381EE81A8D00B7EF91 /* RPRefreshTableViewController.m */,
+				92769F391EE81A8D00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.h */,
+				92769F3A1EE81A8D00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.m */,
+				92769F3B1EE81A8D00B7EF91 /* RPSoundPlayer.h */,
+				92769F3C1EE81A8D00B7EF91 /* RPSoundPlayer.m */,
+				92769F3D1EE81A8D00B7EF91 /* RPUntility.h */,
+				92769F3E1EE81A8D00B7EF91 /* RPUntility.m */,
+				92769F3F1EE81A8D00B7EF91 /* Views */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		92769F051EE81A8D00B7EF91 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				92769F061EE81A8D00B7EF91 /* NSBundle+RedpacketBundle.h */,
+				92769F071EE81A8D00B7EF91 /* NSBundle+RedpacketBundle.m */,
+				92769F081EE81A8D00B7EF91 /* RedpacketColorStore.h */,
+				92769F091EE81A8D00B7EF91 /* RedpacketColorStore.m */,
+				92769F0A1EE81A8D00B7EF91 /* UIAlertView+YZHAlert.h */,
+				92769F0B1EE81A8D00B7EF91 /* UIAlertView+YZHAlert.m */,
+				92769F0C1EE81A8D00B7EF91 /* UIButton+RPAction.h */,
+				92769F0D1EE81A8D00B7EF91 /* UIButton+RPAction.m */,
+				92769F0E1EE81A8D00B7EF91 /* UIColor+RedpacketColors.h */,
+				92769F0F1EE81A8D00B7EF91 /* UIColor+RedpacketColors.m */,
+				92769F101EE81A8D00B7EF91 /* UIView+YZHAnimation.h */,
+				92769F111EE81A8D00B7EF91 /* UIView+YZHAnimation.m */,
+				92769F121EE81A8D00B7EF91 /* UIView+YZHExtension.h */,
+				92769F131EE81A8D00B7EF91 /* UIView+YZHExtension.m */,
+				92769F141EE81A8D00B7EF91 /* UIView+YZHPrompting.h */,
+				92769F151EE81A8D00B7EF91 /* UIView+YZHPrompting.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		92769F161EE81A8D00B7EF91 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				92769F171EE81A8D00B7EF91 /* NSArray+MASShorthandAdditions.h */,
+				92769F181EE81A8D00B7EF91 /* NSArray+RPAdditions.h */,
+				92769F191EE81A8D00B7EF91 /* NSArray+RPAdditions.m */,
+				92769F1A1EE81A8D00B7EF91 /* RPCompositeConstraint.h */,
+				92769F1B1EE81A8D00B7EF91 /* RPCompositeConstraint.m */,
+				92769F1C1EE81A8D00B7EF91 /* RPConstraint+Private.h */,
+				92769F1D1EE81A8D00B7EF91 /* RPConstraint.h */,
+				92769F1E1EE81A8D00B7EF91 /* RPConstraint.m */,
+				92769F1F1EE81A8D00B7EF91 /* RPConstraintMaker.h */,
+				92769F201EE81A8D00B7EF91 /* RPConstraintMaker.m */,
+				92769F211EE81A8D00B7EF91 /* RPLayout.h */,
+				92769F221EE81A8D00B7EF91 /* RPLayoutConstraint.h */,
+				92769F231EE81A8D00B7EF91 /* RPLayoutConstraint.m */,
+				92769F241EE81A8D00B7EF91 /* RPUtilities.h */,
+				92769F251EE81A8D00B7EF91 /* RPViewAttribute.h */,
+				92769F261EE81A8D00B7EF91 /* RPViewAttribute.m */,
+				92769F271EE81A8D00B7EF91 /* RPViewConstraint.h */,
+				92769F281EE81A8D00B7EF91 /* RPViewConstraint.m */,
+				92769F291EE81A8D00B7EF91 /* View+MASShorthandAdditions.h */,
+				92769F2A1EE81A8D00B7EF91 /* View+RPAdditions.h */,
+				92769F2B1EE81A8D00B7EF91 /* View+RPAdditions.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		92769F3F1EE81A8D00B7EF91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92769F401EE81A8D00B7EF91 /* PlaceHolderTextView.h */,
+				92769F411EE81A8D00B7EF91 /* PlaceHolderTextView.m */,
+				92769F421EE81A8D00B7EF91 /* YZTransparent.h */,
+				92769F431EE81A8D00B7EF91 /* YZTransparent.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92769FBD1EE8EBC800B7EF91 /* RedpacketAliAuthAPILib */ = {
+			isa = PBXGroup;
+			children = (
+				92769FBE1EE8EBC800B7EF91 /* lib */,
+				92769FC01EE8EBC800B7EF91 /* Model */,
+				92769FC51EE8EBC800B7EF91 /* RPRedpacketBridge.h */,
+				92769FC61EE8EBC800B7EF91 /* RPRedpacketErrorCode.h */,
+				92769FC71EE8EBC800B7EF91 /* RPRedpacketManager.h */,
+				92769FC81EE8EBC800B7EF91 /* RPRedpacketSetting.h */,
+			);
+			path = RedpacketAliAuthAPILib;
+			sourceTree = "<group>";
+		};
+		92769FBE1EE8EBC800B7EF91 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				92769FBF1EE8EBC800B7EF91 /* libRedpacketAliAuthAPILib.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		92769FC01EE8EBC800B7EF91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92769FC11EE8EBC800B7EF91 /* RPAdvertInfo.h */,
+				92769FC21EE8EBC800B7EF91 /* RPPersonalRedpacketInfo.h */,
+				92769FC31EE8EBC800B7EF91 /* RPRedpacketModel.h */,
+				92769FC41EE8EBC800B7EF91 /* RPUserInfo.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92769E221EE81A6C00B7EF91 /* RedPacketAliAuthUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92769E2C1EE81A6C00B7EF91 /* Build configuration list for PBXNativeTarget "RedPacketAliAuthUI" */;
+			buildPhases = (
+				92769E1F1EE81A6C00B7EF91 /* Sources */,
+				92769E201EE81A6C00B7EF91 /* Frameworks */,
+				92769E211EE81A6C00B7EF91 /* Public */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedPacketAliAuthUI;
+			productName = RedPacketAliAuthUI;
+			productReference = 92769E231EE81A6C00B7EF91 /* libRedPacketAliAuthUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92769E1B1EE81A6C00B7EF91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mr.Yang;
+				TargetAttributes = {
+					92769E221EE81A6C00B7EF91 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = PUEB48NTQQ;
+						ProvisioningStyle = Automatic;
+					};
+					92769FB71EE8E81300B7EF91 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = PUEB48NTQQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92769E1E1EE81A6C00B7EF91 /* Build configuration list for PBXProject "RedPacketAliAuthUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92769E1A1EE81A6C00B7EF91;
+			productRefGroup = 92769E241EE81A6C00B7EF91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92769E221EE81A6C00B7EF91 /* RedPacketAliAuthUI */,
+				92769FB71EE8E81300B7EF91 /* RedpacketAliOpenUIBulid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92769FBB1EE8EA9C00B7EF91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nbuild_targets=(\"RedPacketAliAuthUI\")\n\nbuild_is_Release=1\n\nif [ $build_is_Release -eq 1 ]\nthen\nbuild_config=\"Release\"\nelse\nbuild_config=\"Debug\"\nfi\n\nbash ./RedpacketLibShell.sh \"${build_targets[*]}\" $build_config";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92769E1F1EE81A6C00B7EF91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92769F831EE81A8E00B7EF91 /* YZHRefreshHeader.m in Sources */,
+				92769FA01EE81A8E00B7EF91 /* UIColor+RedpacketColors.m in Sources */,
+				92769F6D1EE81A8E00B7EF91 /* YZHPinyinHelper.m in Sources */,
+				92769F5F1EE81A8E00B7EF91 /* RPRedpacketViews.m in Sources */,
+				92769FA21EE81A8E00B7EF91 /* UIView+YZHExtension.m in Sources */,
+				92769FA71EE81A8E00B7EF91 /* RPConstraintMaker.m in Sources */,
+				92769F631EE81A8E00B7EF91 /* RPSendRedPacketDescribeCellItem.m in Sources */,
+				92769F881EE81A8E00B7EF91 /* YZHRefreshBackNormalFooter.m in Sources */,
+				92769F721EE81A8E00B7EF91 /* RPBaseTableViewController.m in Sources */,
+				92769F941EE81A8E00B7EF91 /* UIView+YZHWebCacheOperation.m in Sources */,
+				92769F731EE81A8E00B7EF91 /* RPSendAmountPacketViewController.m in Sources */,
+				92769F501EE81A8D00B7EF91 /* RPReceiveAmountRedpacketPreView.m in Sources */,
+				92769F691EE81A8E00B7EF91 /* YZHChineseToPinyinResource.m in Sources */,
+				92769F661EE81A8E00B7EF91 /* YZHChineseString.m in Sources */,
+				92769F4A1EE81A8D00B7EF91 /* RedpacketTypeRandpiHandle.m in Sources */,
+				92769F8D1EE81A8E00B7EF91 /* UIScrollView+YZHExtension.m in Sources */,
+				92769F571EE81A8E00B7EF91 /* RedpacketDetailCell.m in Sources */,
+				92769F5D1EE81A8E00B7EF91 /* RPAlipayAuth.m in Sources */,
+				92769F5C1EE81A8E00B7EF91 /* RPAliAuthPay.m in Sources */,
+				92769F751EE81A8E00B7EF91 /* SeachMemberCell.m in Sources */,
+				92769FAB1EE81A8E00B7EF91 /* View+RPAdditions.m in Sources */,
+				92769FB21EE81A8E00B7EF91 /* RPSendRedPacketAutoKeyboardHandle.m in Sources */,
+				92769F7D1EE81A8E00B7EF91 /* YZHMBProgressHUD+YZHAdd.m in Sources */,
+				92769F981EE81A8E00B7EF91 /* YZHSDWebImageDownloader.m in Sources */,
+				92769F621EE81A8E00B7EF91 /* RPSendRedPacketCountCellItem.m in Sources */,
+				92769F861EE81A8E00B7EF91 /* YZHRefreshAutoStateFooter.m in Sources */,
+				92769F4B1EE81A8D00B7EF91 /* RedpacketTypeSingleHandle.m in Sources */,
+				92769F991EE81A8E00B7EF91 /* YZHSDWebImageDownloaderOperation.m in Sources */,
+				92769F9B1EE81A8E00B7EF91 /* YZHSDWebImagePrefetcher.m in Sources */,
+				92769F491EE81A8D00B7EF91 /* RedpacketTypeRandHandle.m in Sources */,
+				92769F651EE81A8E00B7EF91 /* RPSendRedPacketMemberCellItem.m in Sources */,
+				92769F7B1EE81A8E00B7EF91 /* RPSendRedPacketMemberTableViewCell.m in Sources */,
+				92769F901EE81A8E00B7EF91 /* NSData+YZHImageContentType.m in Sources */,
+				92769F931EE81A8E00B7EF91 /* UIImageView+YZHWebCache.m in Sources */,
+				92769F8A1EE81A8E00B7EF91 /* YZHRefreshGifHeader.m in Sources */,
+				92769FAF1EE81A8E00B7EF91 /* RPRedpackeNavgationController.m in Sources */,
+				92769F791EE81A8E00B7EF91 /* RPSendRedPacketCountTableViewCell.m in Sources */,
+				92769F531EE81A8D00B7EF91 /* RPReceiptsInAlipayViewController.m in Sources */,
+				92769FAE1EE81A8E00B7EF91 /* RPBaseViewController.m in Sources */,
+				92769F821EE81A8E00B7EF91 /* YZHRefreshFooter.m in Sources */,
+				92769F9D1EE81A8E00B7EF91 /* RedpacketColorStore.m in Sources */,
+				92769FA11EE81A8E00B7EF91 /* UIView+YZHAnimation.m in Sources */,
+				92769F591EE81A8E00B7EF91 /* RPAdvertisementDetailViewContrroller.m in Sources */,
+				92769FB61EE81A8E00B7EF91 /* YZTransparent.m in Sources */,
+				92769F761EE81A8E00B7EF91 /* SearchMemberViewController.m in Sources */,
+				92769F741EE81A8E00B7EF91 /* RPSendRedPacketViewController.m in Sources */,
+				92769F511EE81A8D00B7EF91 /* RPRedpacketPreView.m in Sources */,
+				92769F561EE81A8E00B7EF91 /* RPReceiotsInAlipayHeaderView.m in Sources */,
+				92769F8B1EE81A8E00B7EF91 /* YZHRefreshNormalHeader.m in Sources */,
+				92769F601EE81A8E00B7EF91 /* RPSendRedPacketCertainCellItem.m in Sources */,
+				92769FA91EE81A8E00B7EF91 /* RPViewAttribute.m in Sources */,
+				92769F7F1EE81A8E00B7EF91 /* YZHRefreshAutoFooter.m in Sources */,
+				92769F771EE81A8E00B7EF91 /* RPSendRedPacketCertainTableViewCell.m in Sources */,
+				92769F4E1EE81A8D00B7EF91 /* RPMemberRedpacketPreView.m in Sources */,
+				92769FA31EE81A8E00B7EF91 /* UIView+YZHPrompting.m in Sources */,
+				92769FA61EE81A8E00B7EF91 /* RPConstraint.m in Sources */,
+				92769F611EE81A8E00B7EF91 /* RPSendRedPacketChangeCellItem.m in Sources */,
+				92769FA41EE81A8E00B7EF91 /* NSArray+RPAdditions.m in Sources */,
+				92769F7A1EE81A8E00B7EF91 /* RPSendRedPacketDescribeTableViewCell.m in Sources */,
+				92769F521EE81A8D00B7EF91 /* RPSendAmountRedpacketPreView.m in Sources */,
+				92769F811EE81A8E00B7EF91 /* YZHRefreshComponent.m in Sources */,
+				92769F851EE81A8E00B7EF91 /* YZHRefreshAutoNormalFooter.m in Sources */,
+				92769F9A1EE81A8E00B7EF91 /* YZHSDWebImageManager.m in Sources */,
+				92769F9C1EE81A8E00B7EF91 /* NSBundle+RedpacketBundle.m in Sources */,
+				92769F6B1EE81A8E00B7EF91 /* YZHPinyinFormatter.m in Sources */,
+				92769FAD1EE81A8E00B7EF91 /* RPAliPayEmpower.m in Sources */,
+				92769F841EE81A8E00B7EF91 /* YZHRefreshAutoGifFooter.m in Sources */,
+				92769FB31EE81A8E00B7EF91 /* RPSoundPlayer.m in Sources */,
+				92769FAC1EE81A8E00B7EF91 /* RedpacketErrorView.m in Sources */,
+				92769F471EE81A8D00B7EF91 /* RedpacketTypeBaseHandle.m in Sources */,
+				92769F4D1EE81A8D00B7EF91 /* UIViewController+RP_Private.m in Sources */,
+				92769FA51EE81A8E00B7EF91 /* RPCompositeConstraint.m in Sources */,
+				92769F8C1EE81A8E00B7EF91 /* YZHRefreshStateHeader.m in Sources */,
+				92769F961EE81A8E00B7EF91 /* YZHSDWebImageCompat.m in Sources */,
+				92769F701EE81A8E00B7EF91 /* RPBaseTableView.m in Sources */,
+				92769F711EE81A8E00B7EF91 /* RPBaseTableViewCell.m in Sources */,
+				92769F551EE81A8E00B7EF91 /* RPReceiotsInAlipayEmptyTableViewCell.m in Sources */,
+				92769F7C1EE81A8E00B7EF91 /* RPSendRedPacketTableViewCell.m in Sources */,
+				92769F801EE81A8E00B7EF91 /* YZHRefreshBackFooter.m in Sources */,
+				92769F581EE81A8E00B7EF91 /* RedPacketDetailViewController.m in Sources */,
+				92769FB51EE81A8E00B7EF91 /* PlaceHolderTextView.m in Sources */,
+				92769F781EE81A8E00B7EF91 /* RPSendRedPacketChangeTableViewCell.m in Sources */,
+				92769F4C1EE81A8D00B7EF91 /* RedpacketViewControl.m in Sources */,
+				92769F6A1EE81A8E00B7EF91 /* YZHHanyuPinyinOutputFormat.m in Sources */,
+				92769F461EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m in Sources */,
+				92769F891EE81A8E00B7EF91 /* YZHRefreshBackStateFooter.m in Sources */,
+				92769F481EE81A8D00B7EF91 /* RedpacketTypeMemberHandle.m in Sources */,
+				92769F671EE81A8E00B7EF91 /* NSString+YZHPinYin4Cocoa.m in Sources */,
+				92769FAA1EE81A8E00B7EF91 /* RPViewConstraint.m in Sources */,
+				92769F4F1EE81A8D00B7EF91 /* RPNormalRedpacketPreView.m in Sources */,
+				92769FB41EE81A8E00B7EF91 /* RPUntility.m in Sources */,
+				92769F8F1EE81A8E00B7EF91 /* YZHRefreshConst.m in Sources */,
+				92769F541EE81A8E00B7EF91 /* RPMyIncomeRedPacketCell.m in Sources */,
+				92769F9E1EE81A8E00B7EF91 /* UIAlertView+YZHAlert.m in Sources */,
+				92769F5B1EE81A8E00B7EF91 /* RPRedpacketDetailHeaderView.m in Sources */,
+				92769F6F1EE81A8E00B7EF91 /* RPBaseCellItem.m in Sources */,
+				92769F6C1EE81A8E00B7EF91 /* YZHPinYinForObjc.m in Sources */,
+				92769F951EE81A8E00B7EF91 /* YZHSDImageCache.m in Sources */,
+				92769FB01EE81A8E00B7EF91 /* RPRedpacketTool.m in Sources */,
+				92769F5A1EE81A8E00B7EF91 /* RPAdvertisementDetailView.m in Sources */,
+				92769F5E1EE81A8E00B7EF91 /* RPRedpacketSendControl.m in Sources */,
+				92769F8E1EE81A8E00B7EF91 /* UIScrollView+YZHRefresh.m in Sources */,
+				92769FB11EE81A8E00B7EF91 /* RPRefreshTableViewController.m in Sources */,
+				92769F971EE81A8E00B7EF91 /* YZHSDWebImageDecoder.m in Sources */,
+				92769F641EE81A8E00B7EF91 /* RPSendRedPacketItem.m in Sources */,
+				92769F441EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m in Sources */,
+				92769F681EE81A8E00B7EF91 /* YZHChineseInclude.m in Sources */,
+				92769FA81EE81A8E00B7EF91 /* RPLayoutConstraint.m in Sources */,
+				92769F871EE81A8E00B7EF91 /* YZHRefreshBackGifFooter.m in Sources */,
+				92769F921EE81A8E00B7EF91 /* UIImage+YZHMultiFormat.m in Sources */,
+				92769F7E1EE81A8E00B7EF91 /* YZHMBProgressHUD.m in Sources */,
+				92769F451EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m in Sources */,
+				92769F911EE81A8E00B7EF91 /* UIImage+YZHGIF.m in Sources */,
+				92769F6E1EE81A8E00B7EF91 /* YZHZYPinYinSearch.m in Sources */,
+				92769F9F1EE81A8E00B7EF91 /* UIButton+RPAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		92769E2A1EE81A6C00B7EF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92769E2B1EE81A6C00B7EF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92769E2D1EE81A6C00B7EF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/RedpacketAliAuthAPILib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RedpacketAliAuthAPILib/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		92769E2E1EE81A6C00B7EF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/RedpacketAliAuthAPILib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RedpacketAliAuthAPILib/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		92769FB81EE8E81300B7EF91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92769FB91EE8E81300B7EF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PUEB48NTQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92769E1E1EE81A6C00B7EF91 /* Build configuration list for PBXProject "RedPacketAliAuthUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92769E2A1EE81A6C00B7EF91 /* Debug */,
+				92769E2B1EE81A6C00B7EF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92769E2C1EE81A6C00B7EF91 /* Build configuration list for PBXNativeTarget "RedPacketAliAuthUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92769E2D1EE81A6C00B7EF91 /* Debug */,
+				92769E2E1EE81A6C00B7EF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92769FBA1EE8E81300B7EF91 /* Build configuration list for PBXAggregateTarget "RedpacketAliOpenUIBulid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92769FB81EE8E81300B7EF91 /* Debug */,
+				92769FB91EE8E81300B7EF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92769E1B1EE81A6C00B7EF91 /* Project object */;
+}
