@@ -1,7 +1,8 @@
 # redpacket-ui-open-ios
 支付宝授权版UI开源代码
 
-### 
+### 开源地址
+[开源地址](https://github.com/YunzhanghuOpen/redpacket-ui-open-ios)
 
 ### 红包SDK接入指南
 https://docs.yunzhanghu.com/integration/ios.html
