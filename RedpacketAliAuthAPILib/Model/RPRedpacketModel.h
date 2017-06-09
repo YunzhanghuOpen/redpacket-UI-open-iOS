@@ -93,7 +93,7 @@ typedef NS_ENUM(NSInteger, RPRedpacketStatusType) {
 
 /*!
  @brief 生成单聊红包或者是小额随机红包的数据模型
- @param type   红包类型
+ @param type            红包类型
  @param receiver        接收者
  @param money           金额
  @param greeting        祝福语

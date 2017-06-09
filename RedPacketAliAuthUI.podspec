@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RedPacketAliAuthUI'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'RedPacketAliAuthUI'
   s.description      = <<-DESC
                        * RedPacketAliAuthUI.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox'
   s.documentation_url = 'https://docs.yunzhanghu.com/integration/ios.html'
   #红包SDKAPI层依赖
-  s.dependency 'RedpacketAliAuthAPILib'
+ # s.dependency 'RedpacketAliAuthAPILib'
   #支付宝SDK依赖
   s.dependency 'RPAlipayLib'
 
