@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger, RPRedpacketStatusType) {
 ///  祝福语
 @property (nonatomic, copy,   readonly) NSString *greeting;
 ///  当前用户收到的红包金额
-@property (nonatomic, assign, readonly) NSString *receiveMoney;
+@property (nonatomic, copy,   readonly) NSString *receiveMoney;
 ///  当前用户是否是红包发送者
 @property (nonatomic, assign, readonly) BOOL isSender;
 ///  红包接收者
