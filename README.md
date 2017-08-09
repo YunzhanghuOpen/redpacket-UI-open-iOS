@@ -1,22 +1,25 @@
 # redpacket-ui-open-ios
 支付宝授权版UI开源代码
 
-### 开源地址
+### 开源代码下载地址
 [开源地址](https://github.com/YunzhanghuOpen/redpacket-ui-open-ios)
 
-### 红包SDK接入指南
+### 红包SDK介绍和集成文档
 https://docs.yunzhanghu.com/integration/ios.html
 
-### SDK接入方式推荐有2种方式，如果无需修改UI可以直接选择pod远程依赖
-1. 直接将开源文件导入到工程, 请注意添加依赖（见下面说明）
-2. pod远程依赖`pod 'RedpacketAliAuthLib'`,此方式不可修改UI文件
+### 针对各个SaaS的集成文档
+https://docs.yunzhanghu.com/integration/saas.html
 
 ### RedpacketAliAuthAPILib
-* 为UI库所用到到数据层，可以使用远程依赖` pod 'RedpacketAliAuthAPILib'`
+* 为UI库所用到的数据层SDK，可以使用远程依赖` pod 'RedpacketAliAuthAPILib'`
+* [下载地址](https://github.com/YunzhanghuOpen/cocoapods-redpacket-api)
 
 ### redpacket-ui依赖
-如需在工程中直接使用redpacket-ui源码，则需要在工程中引入依赖的pod
+* 如需在工程中直接使用redpacket-ui源码，则需要在工程中引入依赖的pod
+    * 红包SDKAPI层依赖 `pod 'RedpacketAliAuthAPILib'`
+    * 支付宝SDK依赖 `pod 'RPAlipayLib'`
 
-* 红包SDKAPI层依赖 `pod 'RedpacketAliAuthAPILib'`
-* 支付宝SDK依赖 `pod 'RPAlipayLib'`
+* [UI开源代码下载地址](https://github.com/YunzhanghuOpen/redpacket-ui-open-ios)
+
+
 

@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger, RPRedpacketStatusType) {
 ///  祝福语
 @property (nonatomic, copy,   readonly) NSString *greeting;
 ///  当前用户收到的红包金额
-@property (nonatomic, assign, readonly) NSString *receiveMoney;
+@property (nonatomic, copy,   readonly) NSString *receiveMoney;
 ///  当前用户是否是红包发送者
 @property (nonatomic, assign, readonly) BOOL isSender;
 ///  红包接收者
@@ -93,7 +93,7 @@ typedef NS_ENUM(NSInteger, RPRedpacketStatusType) {
 
 /*!
  @brief 生成单聊红包或者是小额随机红包的数据模型
- @param type   红包类型
+ @param type            红包类型
  @param receiver        接收者
  @param money           金额
  @param greeting        祝福语

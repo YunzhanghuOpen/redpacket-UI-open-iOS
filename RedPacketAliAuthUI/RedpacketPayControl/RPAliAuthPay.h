@@ -11,7 +11,7 @@
 #import "RPRedpacketManager.h"
 
 
-typedef void(^PaySuccessBlock)(NSString *billRef);
+typedef void(^PaySuccessBlock)(void);
 
 //  处理支付宝付款
 @interface RPAliAuthPay : NSObject

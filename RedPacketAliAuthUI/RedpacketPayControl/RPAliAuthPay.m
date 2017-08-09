@@ -38,10 +38,6 @@
     __weak UIViewController *_payController;
 }
 
-/**
- *  账单流水号
- */
-@property (nonatomic, copy) NSString *billRef;
 @property (nonatomic, copy) PaySuccessBlock paySuccessBlock;
 @property (nonatomic, copy) NSString *payMoney;
 
@@ -65,19 +61,20 @@
     return self;
 }
 
-- (void)payMoney:(NSString *)payMoney inController:(UIViewController *)currentController andFinishBlock:(PaySuccessBlock)paySuccessBlock
+- (void)payMoney:(NSString *)payMoney inController:(UIViewController *)currentController
+                                    andFinishBlock:(PaySuccessBlock)paySuccessBlock
 {
     _payController = currentController;
     self.payMoney = payMoney;
     self.paySuccessBlock = paySuccessBlock;
     
-    [self requestAlipayBillRef:payMoney
-                  inController:currentController];
+    [self requestAlipayWithMoney:payMoney
+                    inController:currentController];
 }
 
 //  下单
-- (void)requestAlipayBillRef:(NSString *)money
-                inController:(UIViewController *)viewController
+- (void)requestAlipayWithMoney:(NSString *)money
+                  inController:(UIViewController *)viewController
 {
     [viewController.view rp_showHudWaitingView:YZHPromptTypeWating];
     
@@ -102,7 +99,7 @@
         } else {
             
             [weakSelf requestAlipayView:string withController:viewController];
-            [self performSelector:@selector(delayViewController:) withObject:viewController afterDelay:2.0];
+            [weakSelf performSelector:@selector(delayViewController:) withObject:viewController afterDelay:2.0];
         }
 
     }];
@@ -119,13 +116,13 @@
     rpWeakSelf;
     
     [[AlipaySDK defaultService] payOrder:orderString fromScheme:urlScheme callback:^(NSDictionary *resultDic) {
-        RPDebug(@"支付宝支付回调BillRef:%@ Param:%@", weakSelf.billRef, resultDic);
+        RPDebug(@"支付宝支付回调Param:%@", resultDic);
         NSInteger code = [[resultDic objectForKey:@"resultStatus"] integerValue];
         
         if (code == AlipayPaySuccess) {
             
             if (weakSelf.paySuccessBlock) {
-                weakSelf.paySuccessBlock(weakSelf.billRef);
+                weakSelf.paySuccessBlock();
             }
             
         }else if (code == AlipayPayUserCancel) {
@@ -148,32 +145,25 @@
 {
     RPDebug(@"红包SDK通知：\n收到支付宝支付回调：%@\n 当前的控制器：%@", notifaction, self);
     
-    if (self.billRef) {
-        if ([notifaction.object isKindOfClass:[NSDictionary class]]) {
-            NSInteger code = [[notifaction.object valueForKey:@"resultStatus"] integerValue];
-            if (code == 9000) {
-                //  支付成功
-                if (self.paySuccessBlock) {
-                    self.paySuccessBlock(self.billRef);
-                }
-                
-            }else if (code == AlipayPayUserCancel) {
-                [self alertCancelPayMessage:@"你已取消支付，该红包不会被发出"
-                                  withTitle:@"取消支付"];
-            }else {
-                [self alertCancelPayMessage:@"付款失败, 该红包不会被发出"
-                                  withTitle:@"付款失败"];
+    if ([notifaction.object isKindOfClass:[NSDictionary class]]) {
+        NSInteger code = [[notifaction.object valueForKey:@"resultStatus"] integerValue];
+        if (code == 9000) {
+            //  支付成功
+            if (self.paySuccessBlock) {
+                self.paySuccessBlock();
             }
             
+        }else if (code == AlipayPayUserCancel) {
+            [self alertCancelPayMessage:@"你已取消支付，该红包不会被发出"
+                              withTitle:@"取消支付"];
         }else {
-            self.billRef = nil;
-            [_payController.view rp_removeHudInManaual];
+            [self alertCancelPayMessage:@"付款失败, 该红包不会被发出"
+                              withTitle:@"付款失败"];
         }
         
     }else {
-
-        //  收到无效Alipay通知
         
+        [_payController.view rp_removeHudInManaual];
     }
 }
 
@@ -246,7 +236,6 @@
     
     [alert show];
 }
-
 
 - (void)delayViewController:(UIViewController *)viewController
 {

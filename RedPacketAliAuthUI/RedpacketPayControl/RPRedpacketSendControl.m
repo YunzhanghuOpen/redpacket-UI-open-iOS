@@ -93,9 +93,9 @@ static RPRedpacketSendControl *__redpacketSendControl = nil;
     
     rpWeakSelf;
     [_payController.view endEditing:YES];
-    [_authPay payMoney:money inController:self.payController andFinishBlock:^(NSString *billRef) {
+    [_authPay payMoney:money inController:self.payController andFinishBlock:^{
         
-        [RPRedpacketSender sendRedpacket:_redpacketModel andSendBlock:^(NSError *error, RPRedpacketModel *model) {
+        [RPRedpacketSender sendRedpacket:weakSelf.redpacketModel andSendBlock:^(NSError *error, RPRedpacketModel *model) {
             
             if (error) {
                 

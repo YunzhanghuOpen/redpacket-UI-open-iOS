@@ -1,8 +1,8 @@
 //
 //  RPUserInfo.h
-//  Description
+//  RedpacketRequestDataLib
 //
-//  Created by Mr.Yang on 2017/4/21.
+//  Created by Mr.Yang on 2017/6/6.
 //  Copyright © 2017年 Mr.Yang. All rights reserved.
 //
 
@@ -23,4 +23,3 @@
 + (RPUserInfo *)userInfoWithGroupID:(NSString *)groupID;
 
 @end
-
