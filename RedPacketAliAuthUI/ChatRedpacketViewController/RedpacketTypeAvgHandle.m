@@ -46,12 +46,17 @@
             break;
         }
         case RPRedpacketStatusTypeOutDate: {
-            [weakSelf setingPacketViewWith:weakSelf.messageModel
-                             boxStatusType:RedpacketBoxStatusTypeOverdue
-                          closeButtonBlock:^(RPRedpacketPreView *packetView) {
-                              [weakSelf removeRedPacketView];
-                       } submitButtonBlock:nil];
-            
+            if (weakSelf.messageModel.isSender){
+                [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
+            } else if (isReceive) {
+                [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
+            } else {
+                [weakSelf setingPacketViewWith:weakSelf.messageModel
+                                 boxStatusType:RedpacketBoxStatusTypeOverdue
+                              closeButtonBlock:^(RPRedpacketPreView *packetView) {
+                                  [weakSelf removeRedPacketView];
+                              } submitButtonBlock:nil];
+            }
         }
             break;
     }

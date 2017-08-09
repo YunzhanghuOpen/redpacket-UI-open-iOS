@@ -20,47 +20,37 @@
             
         case RPRedpacketStatusTypeCanGrab:
         case RPRedpacketStatusTypeGrabFinish: {
-            // 判断自己是否抢过
-            if (weakSelf.messageModel.isSender){
-                
+            if (weakSelf.messageModel.isSender) {
                 [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
-                
-            }else if (isReceive){
-                
+            } else if (isReceive){
                 [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
-                
-            }else{
-                
+            } else {
                 [weakSelf setingPacketViewWith:weakSelf.messageModel
                                  boxStatusType:RedpacketBoxStatusTypeMember
                               closeButtonBlock:^(RPRedpacketPreView *packetView){
-                                  
                     [weakSelf removeRedPacketView];
-                                  
                 } submitButtonBlock:^(RedpacketBoxStatusType boxStatusType, RPRedpacketPreView *packetView) {
-                    
                     if ([weakSelf.messageModel.receiver.userID isEqualToString:[RPRedpacketAliauth redpacketCurrentUser].userID]) {
-                        
                         [weakSelf.delegate sendGrabRedpacketRequest:weakSelf.messageModel];
-                        
                     }
-                    
                 }];
-                
             }
-            
         }
             break;
         case RPRedpacketStatusTypeOutDate: {
-            
-            [weakSelf setingPacketViewWith:weakSelf.messageModel
-                             boxStatusType:RedpacketBoxStatusTypeOverdue
-                          closeButtonBlock:^(RPRedpacketPreView *packetView) {
-                              
-                              [weakSelf removeRedPacketView];
-                              
-            } submitButtonBlock:nil];
-            
+            if (weakSelf.messageModel.isSender) {
+                [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
+            } else if (isReceive){
+                [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
+            } else {
+                [weakSelf setingPacketViewWith:weakSelf.messageModel
+                                 boxStatusType:RedpacketBoxStatusTypeOverdue
+                              closeButtonBlock:^(RPRedpacketPreView *packetView) {
+                                  
+                                  [weakSelf removeRedPacketView];
+                                  
+                              } submitButtonBlock:nil];
+            }
         }
             break;
     }
