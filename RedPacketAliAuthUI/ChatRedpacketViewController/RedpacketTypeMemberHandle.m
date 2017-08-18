@@ -38,9 +38,7 @@
         }
             break;
         case RPRedpacketStatusTypeOutDate: {
-            if (weakSelf.messageModel.isSender) {
-                [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
-            } else if (isReceive){
+            if (weakSelf.messageModel.isSender || isReceive) {
                 [weakSelf showRedPacketDetailViewController:weakSelf.messageModel];
             } else {
                 [weakSelf setingPacketViewWith:weakSelf.messageModel
