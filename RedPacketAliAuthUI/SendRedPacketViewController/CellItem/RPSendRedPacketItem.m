@@ -226,7 +226,7 @@
 
     switch (self.redPacketType) {
         case RPRedpacketTypeGroupRand: {
-            if (self.packetCount) {
+            if (self.packetCount.intValue > 0) {
                 NSDecimalNumberHandler *roundUp = [NSDecimalNumberHandler
                                                    decimalNumberHandlerWithRoundingMode:NSRoundDown
                                                    scale:0
