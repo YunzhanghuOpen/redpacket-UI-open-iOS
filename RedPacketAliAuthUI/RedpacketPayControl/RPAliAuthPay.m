@@ -77,7 +77,6 @@
                   inController:(UIViewController *)viewController
 {
     RPBaseViewController *senderVC = (RPBaseViewController *)viewController;
-    [senderVC.view rp_showHudWaitingView:YZHPromptTypeWating];
     rpWeakSelf;
     [RPRedpacketSender generateRedpacketPayOrder:money generateBlock:^(NSError *error, NSString *string) {
         if (error) {
@@ -180,7 +179,6 @@
 {
     static RPAlipayAuth *staticAuth = nil;
     staticAuth = [RPAlipayAuth new];
-    [_payController.view rp_showHudWaitingView:YZHPromptTypeWating];
     _payController.isVerifyAlipay = NO;//授权页不检查订单支付结果
     [staticAuth doAlipayAuth:^(BOOL isSuccess, NSString *error) {
         staticAuth = nil;
