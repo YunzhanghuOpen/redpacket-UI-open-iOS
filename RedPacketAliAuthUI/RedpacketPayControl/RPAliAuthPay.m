@@ -14,7 +14,7 @@
 #import "RPAlipayAuth.h"
 #import "RPRedpacketTool.h"
 #import "UIAlertView+YZHAlert.h"
-
+#import "RPBaseViewController.h"
 /*
  返回码	含义
  9000	订单支付成功
@@ -35,7 +35,7 @@
 @interface RPAliAuthPay ()
 {
     //支付的父控制器
-    __weak UIViewController *_payController;
+    __weak RPBaseViewController *_payController;
 }
 
 @property (nonatomic, copy) PaySuccessBlock paySuccessBlock;
@@ -64,7 +64,7 @@
 - (void)payMoney:(NSString *)payMoney inController:(UIViewController *)currentController
                                     andFinishBlock:(PaySuccessBlock)paySuccessBlock
 {
-    _payController = currentController;
+    _payController = (RPBaseViewController *)currentController;
     self.payMoney = payMoney;
     self.paySuccessBlock = paySuccessBlock;
     
@@ -76,67 +76,53 @@
 - (void)requestAlipayWithMoney:(NSString *)money
                   inController:(UIViewController *)viewController
 {
-    [viewController.view rp_showHudWaitingView:YZHPromptTypeWating];
-    
+    RPBaseViewController *senderVC = (RPBaseViewController *)viewController;
+    [senderVC.view rp_showHudWaitingView:YZHPromptTypeWating];
     rpWeakSelf;
     [RPRedpacketSender generateRedpacketPayOrder:money generateBlock:^(NSError *error, NSString *string) {
-        
         if (error) {
-            
             [viewController.view rp_removeHudInManaual];
-            
             if (error.code == RedpacketUnAliAuthed) {
-                
                 //  没有授权
+                senderVC.isVerifyAlipay = NO;//没有授权不检查订单支付结果
                 [weakSelf showAuthAlert];
-                
             }else {
-                
+                senderVC.isVerifyAlipay = NO;//付款不检查订单支付结果
                 [weakSelf alertCancelPayMessage:@"付款失败，该红包不会被发出" withTitle:@"付款失败"];
-                
             }
-            
         } else {
-            
             [weakSelf requestAlipayView:string withController:viewController];
-            [weakSelf performSelector:@selector(delayViewController:) withObject:viewController afterDelay:2.0];
         }
-
     }];
 }
 
 - (void)requestAlipayView:(NSString *)orderString withController:(UIViewController *)viewController
 {
+    RPBaseViewController *senderVC = (RPBaseViewController *)viewController;
     NSString *urlScheme = [[NSBundle mainBundle] bundleIdentifier];
     if (urlScheme.length == 0) {
+        [senderVC.view rp_removeHudInManaual];
         [self alertWithMessage:@"urlScheme为空，无法调用支付宝"];
         return;
     }
-    
     rpWeakSelf;
-    
     [[AlipaySDK defaultService] payOrder:orderString fromScheme:urlScheme callback:^(NSDictionary *resultDic) {
         RPDebug(@"支付宝支付回调Param:%@", resultDic);
+        [viewController.view rp_removeHudInManaual];
         NSInteger code = [[resultDic objectForKey:@"resultStatus"] integerValue];
-        
         if (code == AlipayPaySuccess) {
-            
             if (weakSelf.paySuccessBlock) {
                 weakSelf.paySuccessBlock();
             }
-            
         }else if (code == AlipayPayUserCancel) {
-            
-            [weakSelf alertCancelPayMessage:@"你已取消支付，该红包不会被发出"
+            senderVC.isVerifyAlipay = NO;//取消支付不检查订单支付结果
+            [weakSelf alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
                               withTitle:@"取消支付"];
-            
         }else {
-            
+            senderVC.isVerifyAlipay = NO;//支付失败不检查订单支付结果
             [weakSelf alertCancelPayMessage:@"付款失败, 该红包不会被发出"
                               withTitle:@"付款失败"];
-            
         }
-        
     }];
 }
 
@@ -154,9 +140,11 @@
             }
             
         }else if (code == AlipayPayUserCancel) {
-            [self alertCancelPayMessage:@"你已取消支付，该红包不会被发出"
+            _payController.isVerifyAlipay = NO;//取消支付不检查订单支付结果
+            [self alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
                               withTitle:@"取消支付"];
         }else {
+            _payController.isVerifyAlipay = NO;//支付失败不检查订单支付结果
             [self alertCancelPayMessage:@"付款失败, 该红包不会被发出"
                               withTitle:@"付款失败"];
         }
@@ -192,26 +180,17 @@
 {
     static RPAlipayAuth *staticAuth = nil;
     staticAuth = [RPAlipayAuth new];
-    
     [_payController.view rp_showHudWaitingView:YZHPromptTypeWating];
-    
+    _payController.isVerifyAlipay = NO;//授权页不检查订单支付结果
     [staticAuth doAlipayAuth:^(BOOL isSuccess, NSString *error) {
-        
         staticAuth = nil;
         [_payController.view rp_removeHudInManaual];
-        
         if (isSuccess) {
-            
             [self alertWithMessage:@"已成功绑定支付宝账号，以后红包收到的钱会自动入账到此支付宝账号。"];
-        
-        }else {
-            
+        } else {
             [_payController.view rp_showHudErrorView:error];
-            
         }
-        
     }];
-    
 }
 
 - (void)alertWithMessage:(NSString *)message
@@ -235,11 +214,6 @@
                                           otherButtonTitles:nil];
     
     [alert show];
-}
-
-- (void)delayViewController:(UIViewController *)viewController
-{
-    [viewController.view rp_removeHudInManaual];
 }
 
 @end

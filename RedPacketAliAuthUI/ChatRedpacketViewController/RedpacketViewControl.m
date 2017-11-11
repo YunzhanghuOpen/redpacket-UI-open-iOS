@@ -123,141 +123,84 @@
     
     [RPRedpacketReceiver grabRedpacket:messageModel
                           andGrabBlock:^(NSError *error, RPRedpacketModel *model) {
-        
         if (error) {
-            
             if (error.code != RedpacketUnAliAuthed) {
-                
                 [weakSelf.redpacketHandle removeRedPacketView];
-                
             }else {
-                
                 [weakSelf.redpacketHandle removeRedPacketView:NO];
                 [weakSelf.fromViewController.view rp_removeHudInManaual];
-                
                 [RPAliPayEmpower aliEmpowerSuccess:^{
-                    
                     [weakSelf.fromViewController.view rp_removeHudInManaual];
-                    
                 } failure:^(NSString *errorString) {
-                    
                     [weakSelf.fromViewController.view rp_showHudErrorView:errorString];
-                    
                 }];
-                
                 return ;
             }
-            
             [weakSelf.fromViewController.view rp_removeHudInManaual];
-            
             if (error.code == NSIntegerMax) {
-                
                 [weakSelf.fromViewController.view rp_showHudErrorView:error.localizedDescription];
-                
             } else {
-                
                 if (error.code == RedpacketCompleted) {
-                    
                     // 需要将数字改成type类型
                     // 出现拆红包界面 但是拆开的时候没有了，则为这个code
-                    
                     RedpacketBoxStatusType boxStatusType = -1;
-                    
                     if (messageModel.redpacketType == RPRedpacketTypeGroupAvg ||
                         messageModel.redpacketType == RPRedpacketTypeSystem) {
-                        
                         boxStatusType = RedpacketBoxStatusTypeAvgRobbing;
-                        
                     }else if (messageModel.redpacketType == RPRedpacketTypeGroupRand){
-                        
                         boxStatusType = RedpacketBoxStatusTypeRandRobbing;
                     }
-                    
                     [weakSelf.redpacketHandle setingPacketViewWith:messageModel
                                                      boxStatusType:boxStatusType
                                                   closeButtonBlock:^(RPRedpacketPreView *packetView) {
-                                                      
                                                       [weakSelf.redpacketHandle removeRedPacketView];
-                                                      
                     } submitButtonBlock:^(RedpacketBoxStatusType boxStatusType, RPRedpacketPreView *packetView) {
-                        
                         if (packetView.boxStatusType == RedpacketBoxStatusTypeRandRobbing) {
-                            
                             [weakSelf.redpacketHandle showRedPacketDetailViewController:weakSelf.redpacketHandle.messageModel];
-                            
                         } else {
-                            
                             [weakSelf.redpacketHandle getRedpacketDetail];
-                            
                         }
-                        
                     }];
-                    
                 }else if (error.code == RedpacketGetReceivedBefore){
-                    
                     // 需要将数字改成type类型
                     [weakSelf.redpacketHandle showRedPacketDetailViewController:messageModel];
-                    
                 }else{
-                    
                     [weakSelf.fromViewController.view rp_showHudErrorView:error.localizedDescription];
-                    
                 }
             }
-            
         } else {
-            
             [weakSelf.fromViewController.view rp_removeHudInManaual];
-            
             // mark？？ 这个和下边的重复？？
             [weakSelf.redpacketHandle showRedPacketDetailViewController:model];
-            
             // 拼手气红包需要拆分显示
             switch (messageModel.redpacketType) {
-                    
                 case RPRedpacketTypeGroupRand:
                 case RPRedpacketTypeGoupMember:
-                    
                     [weakSelf.redpacketHandle getRedpacketDetail];
                     break;
-                    
                 case RPRedpacketTypeAmount:
-                    
                     [weakSelf.redpacketHandle getRedpacketDetail];
                     break;
-                    
                 default:
                     break;
-                    
             }
-            
             if (messageModel.redpacketType != RPRedpacketTypeAmount) {
-                
                 [weakSelf.redpacketHandle removeRedPacketView];
-                
             }
-            
             if (weakSelf.redpacketGrabBlock) {
-                
                 //播放声音
                 [RPSoundPlayer playRedpacketOpenSound];
                 weakSelf.redpacketGrabBlock(model);
-                
             }
         }
-  
     }];
 }
 
 //  广告红包点击相关链接时的回调
 - (void)advertisementRedPacketAction:(RPAdvertInfo *)advertInfo {
-    
     if (self.advertisementAction) {
-        
         self.advertisementAction(advertInfo);
-        
     }
-    
 }
 
 #pragma mark 发红包

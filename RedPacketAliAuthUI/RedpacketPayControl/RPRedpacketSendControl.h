@@ -12,6 +12,8 @@
 
 
 typedef void (^RedpacketSendSccessBlock)(id object);
+//error为nil表示支付成功
+typedef void (^AlipayIsSuccessBlock)(NSError *error);
 
 @interface RPRedpacketSendControl : NSObject
 
@@ -24,5 +26,7 @@ typedef void (^RedpacketSendSccessBlock)(id object);
 - (void)payMoney:(NSString *)money withMessageModel:(RPRedpacketModel *)model
                                        inController:(UIViewController *)viewController
                                     andSuccessBlock:(RedpacketSendSccessBlock)successBlock;
+
+- (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block;
 
 @end

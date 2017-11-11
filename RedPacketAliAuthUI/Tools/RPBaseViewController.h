@@ -42,4 +42,9 @@
 
 - (void)configViewStyle;
 
+/**
+ *  是否验证支付宝的支付操作
+ */
+@property (nonatomic,assign) BOOL isVerifyAlipay;
+
 @end

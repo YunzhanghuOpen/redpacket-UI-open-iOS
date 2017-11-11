@@ -24,7 +24,7 @@
 #import "RPRedpacketBridge.h"
 #import "RPRedpacketSetting.h"
 
-@interface RPSendRedPacketViewController ()<RPSendRedPacketBaseTableViewCellProtocol,SearchMemberViewDelegate>
+@interface RPSendRedPacketViewController ()<RPSendRedPacketBaseTableViewCellProtocol,SearchMemberViewDelegate,UIAlertViewDelegate>
 
 @property (nonatomic,strong) RPBaseCellItem                    * certainCellItem;
 @property (nonatomic,strong) RPBaseCellItem                    * changeCellItem;
@@ -32,6 +32,9 @@
 @property (nonatomic,strong) UILabel                           * warnPromptLabel;
 @property (nonatomic,strong) RPSendRedPacketAutoKeyboardHandle * autoKeyboardHandle;
 @property (nonatomic,weak  ) RedpacketErrorView                * errorView;
+@property (nonatomic,strong) RPRedpacketSendControl            * sendControl;
+@property (nonatomic,strong) UIAlertView                       * fetchAliPayAlert;
+@property (nonatomic,strong) UIAlertView                       * aliPayAlert;
 
 @end
 
@@ -40,6 +43,7 @@
 - (void)dealloc
 {
     [RPRedpacketSendControl releaseSendControl];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - init
@@ -118,6 +122,37 @@
     [self configViewStyle];
     [self resgistDescribeLabe];
     [self configNetworking];
+    
+    //应用切换到前台，判断支付宝是否支付成功
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(verifyIsAlipay:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+}
+
+- (void)verifyIsAlipay:(id)sender
+{
+    if (_sendControl && self.isVerifyAlipay) {
+        [_sendControl fetchAlipayIsSuccess:^(NSError *error) {
+            self.isVerifyAlipay = NO;//防止重复弹出
+            if (error) {
+                _fetchAliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"您的订单尚未完成支付，是否继续支付？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续支付", nil];
+                [_fetchAliPayAlert show];
+            } else {
+                _aliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"红包发送失败，扣除的金额将于48小时后退回您的支付宝账户。" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [_aliPayAlert show];
+            }
+        }];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [self didSendRedPacket];
+    } else {
+        [self.view rp_removeHudInManaual];
+    }
 }
 
 - (void)configNetworking {
@@ -168,29 +203,22 @@
 #pragma mark - TableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRawItem:(RPBaseCellItem *)cellItem {
-    
     if ([cellItem isKindOfClass:[RPSendRedPacketMemberCellItem class]]) {
-        
         SearchMemberViewController * searchController = [[SearchMemberViewController alloc]init];
         searchController.delegate = self;
         [self.navigationController pushViewController:searchController animated:YES];
-        
     }
-    
 }
 
 #pragma mark - CellDelegate
 - (void)didChangePacketInputMoney {
-    
     if (!self.certainCellItem.cellIndexPath) return;
-    
     [self.certainCellItem.tableViewCell setCellItem:self.certainCellItem];
     [self showWarmPromtLableWith:self.rawItem.warningTittle];
 }
 
 - (void)didChangePacketCount {
     if (!self.certainCellItem.cellIndexPath) return;
-    
     [self.certainCellItem.tableViewCell setCellItem:self.certainCellItem];
     [self showWarmPromtLableWith:self.rawItem.warningTittle];
     [self.changeCellItem.tableViewCell tableViewCellCustomAction];
@@ -202,23 +230,24 @@
 }
 
 - (void)didSendRedPacket {
-    
+    [self.view rp_showHudWaitingView:YZHPromptTypeWating];
     rpWeakSelf;
-    RPRedpacketSendControl *sendControl = [RPRedpacketSendControl currentControl];
-    sendControl.hostViewController = self.hostController;
-    
-    [sendControl payMoney:[NSString stringWithFormat:@"%.2f",self.rawItem.totalMoney.floatValue/100.0f]
+    _sendControl = [RPRedpacketSendControl currentControl];
+    _sendControl.hostViewController = self.hostController;
+    [_sendControl payMoney:[NSString stringWithFormat:@"%.2f",self.rawItem.totalMoney.floatValue/100.0f]
          withMessageModel:self.rawItem.messageModel
              inController:self andSuccessBlock:^(id object) {
-                 
-        RPRedpacketModel *redpacketModel = (RPRedpacketModel *)object;
-        weakSelf.sendRedPacketBlock(redpacketModel);
-        [weakSelf dismissViewControllerAnimated:YES completion:^{
-            
-        }];
-                 
+                 weakSelf.isVerifyAlipay = NO;//红包发送成功不需要检查支付结果
+                 if (_fetchAliPayAlert) {
+                     [_fetchAliPayAlert dismissWithClickedButtonIndex:0 animated:NO];
+                 }
+                 if (_aliPayAlert) {
+                     [_aliPayAlert dismissWithClickedButtonIndex:0 animated:NO];
+                 }
+                 RPRedpacketModel *redpacketModel = (RPRedpacketModel *)object;
+                 weakSelf.sendRedPacketBlock(redpacketModel);
+                 [weakSelf dismissViewControllerAnimated:YES completion:nil];
     }];
-    
 }
 
 #pragma mark -SearchMemberViewDelegate
@@ -231,13 +260,9 @@
 }
 
 - (void)getGroupMemberListCompletionHandle:(void (^)(NSArray<RPUserInfo *> *))completionHandle {
-    
     if (completionHandle && self.fetchBlock) {
-        
         self.fetchBlock(completionHandle);
-        
     }
-    
 }
 
 #pragma mark - View Store
@@ -290,18 +315,13 @@
         RedpacketErrorView * errorView = [[RedpacketErrorView alloc]init];
         errorView.tag = 0;
         errorView.frame = CGRectMake(0, RP_SCREENHEIGHT, RP_SCREENWIDTH, RP_SCREENHEIGHT);
-        
         rpWeakSelf;
         errorView.buttonClickBlock = ^(){
-            
             [weakSelf configNetworking];
-            
         };
-        
         [self.view addSubview:errorView];
         _errorView = errorView;
     }
-    
     return _errorView;
 }
 

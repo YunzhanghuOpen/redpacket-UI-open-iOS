@@ -37,5 +37,4 @@ typedef NS_ENUM(NSInteger,RPSendRedPacketViewControllerType){
  */
 - (void)setMemberCount:(NSInteger)memberCount;
 
-
 @end

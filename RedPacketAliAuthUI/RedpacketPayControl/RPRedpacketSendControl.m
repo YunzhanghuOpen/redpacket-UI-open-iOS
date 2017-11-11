@@ -16,14 +16,13 @@
 #import "RPRedpacketManager.h"
 #import "RPRedpacketSetting.h"
 
-
 static RPRedpacketSendControl *__redpacketSendControl = nil;
 
 @interface RPRedpacketSendControl()
 
 @property (nonatomic, strong) RPAliAuthPay *authPay;
 @property (nonatomic,   copy) NSString *redpacketID;
-@property (nonatomic,   weak) UIViewController *payController;
+@property (nonatomic,   weak) RPBaseViewController *payController;
 @property (nonatomic, strong) RPRedpacketModel *redpacketModel;
 @property (nonatomic,   copy) RedpacketSendSccessBlock sendSuccessBlock;
 
@@ -63,7 +62,7 @@ static RPRedpacketSendControl *__redpacketSendControl = nil;
 }
 
 - (void)payMoney:(NSString *)money withMessageModel:(RPRedpacketModel *)model
-                                       inController:(UIViewController *)viewController
+                                       inController:(RPBaseViewController *)viewController
                                     andSuccessBlock:(RedpacketSendSccessBlock)successBlock
 {
     _payController = viewController;
@@ -72,50 +71,44 @@ static RPRedpacketSendControl *__redpacketSendControl = nil;
     
     rpWeakSelf;
     [RPRedpacketSender generateRedpacketID:^(NSError *error, NSString *string) {
-        
         if (error) {
-            
             [weakSelf alertWithMessage:error.localizedDescription];
             __redpacketSendControl = nil;
-            
         } else {
-            
             [weakSelf payMoneyInPayControl:money];
-            
         }
-        
     }];
 }
 
 - (void)payMoneyInPayControl:(NSString *)money
 {
     _authPay = [RPAliAuthPay new];
-    
+    _payController.isVerifyAlipay = YES;//调起支付宝以后需要检查支付结果
     rpWeakSelf;
-    [_payController.view endEditing:YES];
-    [_authPay payMoney:money inController:self.payController andFinishBlock:^{
-        
+    [_authPay payMoney:money inController:weakSelf.payController andFinishBlock:^{
         [RPRedpacketSender sendRedpacket:weakSelf.redpacketModel andSendBlock:^(NSError *error, RPRedpacketModel *model) {
-            
+            [weakSelf.payController.view rp_removeHudInManaual];
             if (error) {
-                
                 [weakSelf alertWithMessage:error.localizedDescription];
                 __redpacketSendControl = nil;
-                
             } else {
-                
                 if (weakSelf.sendSuccessBlock){
-                    
                     weakSelf.sendSuccessBlock(weakSelf.redpacketModel);
                     __redpacketSendControl = nil;
-                    
+                } else {
+                    [weakSelf alertWithMessage:@"若红包未发送成功，扣除金额将于24小时后退回"];
                 }
-                
             }
-            
         }];
-        
     }];
 }
+
+- (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block
+{
+    [RPRedpacketSender fecchAlipayIsSuccess:^(NSError *error) {
+        block(error);
+    }];
+}
+
 @end
 
