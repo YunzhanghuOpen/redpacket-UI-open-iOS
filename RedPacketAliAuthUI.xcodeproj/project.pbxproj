@@ -139,9 +139,6 @@
 		92769FB61EE81A8E00B7EF91 /* YZTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769F431EE81A8D00B7EF91 /* YZTransparent.m */; };
 		92769FBC1EE8EB7900B7EF91 /* RedpacketLib.h in Public */ = {isa = PBXBuildFile; fileRef = 92769E671EE81A8D00B7EF91 /* RedpacketLib.h */; };
 		92769FCD1EE8EC0000B7EF91 /* RedpacketViewControl.h in Public */ = {isa = PBXBuildFile; fileRef = 92769E411EE81A8D00B7EF91 /* RedpacketViewControl.h */; };
-		92769FCE1EE8F9BE00B7EF91 /* (null) in Public */ = {isa = PBXBuildFile; };
-		92769FCF1EE8F9C400B7EF91 /* (null) in Public */ = {isa = PBXBuildFile; };
-		92769FE11EEA3FC800B7EF91 /* (null) in Public */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -151,9 +148,6 @@
 			dstPath = "$(PROJECT_DIR)/../RedPacketAliOpenUILib";
 			dstSubfolderSpec = 0;
 			files = (
-				92769FCE1EE8F9BE00B7EF91 /* (null) in Public */,
-				92769FCF1EE8F9C400B7EF91 /* (null) in Public */,
-				92769FE11EEA3FC800B7EF91 /* (null) in Public */,
 				92769FCD1EE8EC0000B7EF91 /* RedpacketViewControl.h in Public */,
 				92769FBC1EE8EB7900B7EF91 /* RedpacketLib.h in Public */,
 			);
