@@ -133,7 +133,7 @@
 - (void)verifyIsAlipay:(id)sender
 {
     if (_sendControl && self.isVerifyAlipay) {
-        [_sendControl fetchAlipayIsSuccess:^(NSError *error) {
+        [RPRedpacketSendControl fetchAlipayIsSuccess:^(NSError *error) {
             self.isVerifyAlipay = NO;//防止重复弹出
             if (error) {
                 _fetchAliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"您的订单尚未完成支付，是否继续支付？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续支付", nil];

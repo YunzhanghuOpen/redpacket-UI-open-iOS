@@ -64,6 +64,9 @@ typedef void(^fetchFinishBlock)(NSError *error, RPPersonalRedpacketInfo *);
 + (void)generateRedpacketPayOrder:(NSString *)sendMoney
                     generateBlock:(RPProcessResultStringBlock)block;
 
+// 查询支付宝订单是否支付成功，发送红包失败的时候，调用查询
++ (void)fecchAlipayBillIsSuccess:(RPProcessResultBlock)block;
+
 /*! 
  @brief 发送红包
  @param model 通过【RPRedpacketModel】类里边生成红包model的方法生成

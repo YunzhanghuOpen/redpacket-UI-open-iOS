@@ -103,9 +103,9 @@ static RPRedpacketSendControl *__redpacketSendControl = nil;
     }];
 }
 
-- (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block
++ (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block
 {
-    [RPRedpacketSender fecchAlipayIsSuccess:^(NSError *error) {
+    [RPRedpacketSender fecchAlipayBillIsSuccess:^(NSError *error) {
         block(error);
     }];
 }

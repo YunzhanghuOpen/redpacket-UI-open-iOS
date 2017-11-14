@@ -27,6 +27,6 @@ typedef void (^AlipayIsSuccessBlock)(NSError *error);
                                        inController:(UIViewController *)viewController
                                     andSuccessBlock:(RedpacketSendSccessBlock)successBlock;
 
-- (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block;
++ (void)fetchAlipayIsSuccess:(AlipayIsSuccessBlock)block;
 
 @end
