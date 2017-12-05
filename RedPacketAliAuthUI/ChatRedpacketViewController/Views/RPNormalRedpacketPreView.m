@@ -76,6 +76,9 @@
     if (!self.submitButtonBlock) return;
     
     self.submitButtonBlock(sender == self.luckButton ? RedpacketBoxStatusTypeOverdue : self.boxStatusType, self);
+    if (self.boxStatusType == RedpacketBoxStatusTypeAvgRobbing || self.boxStatusType == RedpacketBoxStatusTypeRandRobbing) {
+        [self closeAction:sender];
+    }
     
 }
 
