@@ -91,6 +91,9 @@ typedef NS_ENUM(NSInteger, RPRedpacketStatusType) {
 @property (nonatomic, copy,   readonly) NSString *takenCostTime;
 
 
+// 清空takenUsers数组 关闭红包详情页时，可以调用此方法。
+- (void)clearTakenUsers;
+
 /*!
  @brief 生成单聊红包或者是小额随机红包的数据模型
  @param redpacketType   红包类型
