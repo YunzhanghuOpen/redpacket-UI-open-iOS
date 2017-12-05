@@ -289,6 +289,7 @@ static CGFloat rp_cellheight = 58.0f;
 
 - (void)clickButtonLeft
 {
+    [self.messageModel clearTakenUsers];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
