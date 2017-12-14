@@ -104,10 +104,16 @@
         [self alertWithMessage:@"urlScheme为空，无法调用支付宝"];
         return;
     }
+    
+    NSURL * myURL_APP_A = [NSURL URLWithString:@"alipay:"];
+    if (![[UIApplication sharedApplication] canOpenURL:myURL_APP_A]) {
+        //如果没有安装支付宝客户端那么需要去掉菊花
+        [senderVC.view rp_removeHudInManaual];
+    }
     rpWeakSelf;
     [[AlipaySDK defaultService] payOrder:orderString fromScheme:urlScheme callback:^(NSDictionary *resultDic) {
         RPDebug(@"支付宝支付回调Param:%@", resultDic);
-        [viewController.view rp_removeHudInManaual];
+        [senderVC.view rp_removeHudInManaual];
         NSInteger code = [[resultDic objectForKey:@"resultStatus"] integerValue];
         if (code == AlipayPaySuccess) {
             if (weakSelf.paySuccessBlock) {
