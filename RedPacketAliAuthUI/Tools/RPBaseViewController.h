@@ -28,7 +28,7 @@
 @property (nonatomic) UILabel *subLable;
 
 /**
- *  设置NavgationBard的北京颜色 title颜色 和 左右按钮颜色
+ *  设置NavgationBard的背景颜色 title颜色 和 左右按钮颜色
  */
 - (void)setNavgationBarBackgroundColor:(UIColor *)groundColor
                             titleColor:(UIColor *)titleColor
