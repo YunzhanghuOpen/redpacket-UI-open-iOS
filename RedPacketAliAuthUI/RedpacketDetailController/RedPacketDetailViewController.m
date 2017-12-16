@@ -43,6 +43,7 @@
     self.tableView.tableFooterView = footer;
     
     [self clearBackBarButtonItemTitle];
+    [self.messageModel clearTakenUsers];
     [self loadDetail];
 }
 
