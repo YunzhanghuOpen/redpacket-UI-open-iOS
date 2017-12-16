@@ -80,7 +80,9 @@ static NSInteger pageSize = 12;
                 weakSelf.username = nil;
                 [weakSelf requestRedpacketGetDetailReplacer];
                 [weakSelf.tableView reloadData];
-            } else {
+            } else if (error.code == -3) {
+                [self LoadretryView];
+            }  else {
                 [weakSelf.view rp_showHudErrorView:error.localizedDescription];
             }
         }];
@@ -91,6 +93,8 @@ static NSInteger pageSize = 12;
                 weakSelf.username = string;
                 [weakSelf requestRedpacketGetDetailReplacer];
                 [weakSelf.tableView reloadData];
+            } else if (error.code == -3) {
+                [self LoadretryView];
             } else {
                 [weakSelf.view rp_showHudErrorView:error.localizedDescription];
             }

@@ -40,6 +40,7 @@
 
 @property (nonatomic, copy) PaySuccessBlock paySuccessBlock;
 @property (nonatomic, copy) NSString *payMoney;
+@property (nonatomic, assign) BOOL isShowAlert;
 
 @end
 
@@ -146,8 +147,10 @@
             
         }else if (code == AlipayPayUserCancel) {
             _payController.isVerifyAlipay = NO;//取消支付不检查订单支付结果
-            [self alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
-                              withTitle:@"取消支付"];
+            if (!_isShowAlert) {
+                [self alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
+                                  withTitle:@"取消支付"];
+            }
         }else {
             _payController.isVerifyAlipay = NO;//支付失败不检查订单支付结果
             [self alertCancelPayMessage:@"付款失败, 该红包不会被发出"
@@ -218,6 +221,7 @@
                                           otherButtonTitles:nil];
     
     [alert show];
+    _isShowAlert = YES;
 }
 
 @end

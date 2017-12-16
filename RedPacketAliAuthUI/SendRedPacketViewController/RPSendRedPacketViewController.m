@@ -44,6 +44,8 @@
 {
     [RPRedpacketSendControl releaseSendControl];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    _aliPayAlert = nil;
+    _fetchAliPayAlert = nil;
 }
 
 #pragma mark - init
@@ -136,11 +138,15 @@
         [RPRedpacketSendControl fetchAlipayIsSuccess:^(NSError *error) {
             self.isVerifyAlipay = NO;//防止重复弹出
             if (error) {
-                _fetchAliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"您的订单尚未完成支付，是否继续支付？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续支付", nil];
-                [_fetchAliPayAlert show];
+                if (!_fetchAliPayAlert) {
+                    _fetchAliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"您的订单尚未完成支付，是否继续支付？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续支付", nil];
+                    [_fetchAliPayAlert show];
+                }
             } else {
-                _aliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"红包发送失败，扣除的金额将于48小时后退回您的支付宝账户。" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
-                [_aliPayAlert show];
+                if (!_aliPayAlert) {
+                    _aliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"红包发送失败，扣除的金额将于48小时后退回您的支付宝账户。" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    [_aliPayAlert show];
+                }
             }
         }];
     }
@@ -153,14 +159,15 @@
     } else {
         [self.view rp_removeHudInManaual];
     }
+    _fetchAliPayAlert = nil;
+    _aliPayAlert      = nil;
 }
 
 - (void)configNetworking {
-    
     [self.view rp_showHudWaitingView:YZHPromptTypeWating];
     rpWeakSelf;
     //  获取发红包时所需的各种限额
-   [RPRedpacketSetting asyncRequestRedpacketSettings:^(NSError *error) {
+   [RPRedpacketSetting asyncRequestRedpacketsettingsIfNeed:^(NSError *error) {
        [weakSelf.view rp_removeHudInManaual];
        if (!error) {
            weakSelf.subLable.text = [NSString stringWithFormat:@"%@红包服务",[RPRedpacketSetting shareInstance].redpacketOrgName];
