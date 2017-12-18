@@ -209,6 +209,7 @@
                                           otherButtonTitles:nil];
     
     [alert show];
+    [_payController.view rp_removeHudInManaual];
 }
 
 - (void)alertCancelPayMessage:(NSString *)message
@@ -222,6 +223,7 @@
     
     [alert show];
     _isShowAlert = YES;
+    [_payController.view rp_removeHudInManaual];
 }
 
 @end
