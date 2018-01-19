@@ -122,8 +122,10 @@
             }
         }else if (code == AlipayPayUserCancel) {
             senderVC.isVerifyAlipay = NO;//取消支付不检查订单支付结果
-            [weakSelf alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
-                              withTitle:@"取消支付"];
+            if (!_isShowAlert) {
+                [self alertCancelPayMessage:@"您已取消支付，该红包不会被发出"
+                                  withTitle:@"取消支付"];
+            }
         }else {
             senderVC.isVerifyAlipay = NO;//支付失败不检查订单支付结果
             [weakSelf alertCancelPayMessage:@"付款失败, 该红包不会被发出"

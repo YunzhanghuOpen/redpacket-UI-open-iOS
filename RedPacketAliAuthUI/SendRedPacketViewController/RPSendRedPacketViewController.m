@@ -130,6 +130,7 @@
                                              selector:@selector(verifyIsAlipay:)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
+    self.isVerifyAlipay = NO;
 }
 
 - (void)verifyIsAlipay:(id)sender
@@ -140,18 +141,19 @@
                //如果没有安装支付宝客户端那么需要去掉菊花
         isAppAlipay = NO;
     }
-    if (_sendControl && self.isVerifyAlipay&&isAppAlipay) {
+    if (_sendControl && self.isVerifyAlipay && isAppAlipay) {
         [RPRedpacketSendControl fetchAlipayIsSuccess:^(NSError *error) {
-            self.isVerifyAlipay = NO;//防止重复弹出
             if (error) {
-                if (!_fetchAliPayAlert) {
+                if (!_fetchAliPayAlert && self.isVerifyAlipay) {
                     _fetchAliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"您的订单尚未完成支付，是否继续支付？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"继续支付", nil];
                     [_fetchAliPayAlert show];
+                    self.isVerifyAlipay = NO;//防止重复弹出
                 }
             } else {
-                if (!_aliPayAlert) {
+                if (!_aliPayAlert && self.isVerifyAlipay) {
                     _aliPayAlert = [[UIAlertView alloc]initWithTitle:@"" message:@"红包若发送失败，扣除的金额将于48小时后退回您的支付宝账户。" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [_aliPayAlert show];
+                    self.isVerifyAlipay = NO;//防止重复弹出
                 }
             }
         }];

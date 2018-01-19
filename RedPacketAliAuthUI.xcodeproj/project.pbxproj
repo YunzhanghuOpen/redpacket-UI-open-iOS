@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		84B771C11FE761100010BD94 /* libRedpacketAliAuthAPILib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B771B71FE761100010BD94 /* libRedpacketAliAuthAPILib.a */; };
+		840C9AC72000C6E9008C9CA1 /* libRedpacketAliAuthAPILib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C9AC52000C6E9008C9CA1 /* libRedpacketAliAuthAPILib.a */; };
 		92769F441EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E321EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m */; };
 		92769F451EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E341EE81A8D00B7EF91 /* RedpacketTypeAmountHandle.m */; };
 		92769F461EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92769E361EE81A8D00B7EF91 /* RedpacketTypeAvgHandle.m */; };
@@ -157,15 +157,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84B771B71FE761100010BD94 /* libRedpacketAliAuthAPILib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedpacketAliAuthAPILib.a; sourceTree = "<group>"; };
-		84B771B91FE761100010BD94 /* RPAdvertInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAdvertInfo.h; sourceTree = "<group>"; };
-		84B771BA1FE761100010BD94 /* RPPersonalRedpacketInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPPersonalRedpacketInfo.h; sourceTree = "<group>"; };
-		84B771BB1FE761100010BD94 /* RPRedpacketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketModel.h; sourceTree = "<group>"; };
-		84B771BC1FE761100010BD94 /* RPUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUserInfo.h; sourceTree = "<group>"; };
-		84B771BD1FE761100010BD94 /* RPRedpacketBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketBridge.h; sourceTree = "<group>"; };
-		84B771BE1FE761100010BD94 /* RPRedpacketErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketErrorCode.h; sourceTree = "<group>"; };
-		84B771BF1FE761100010BD94 /* RPRedpacketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketManager.h; sourceTree = "<group>"; };
-		84B771C01FE761100010BD94 /* RPRedpacketSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketSetting.h; sourceTree = "<group>"; };
+		840C9ABC2000C6E9008C9CA1 /* RPRedpacketErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketErrorCode.h; sourceTree = "<group>"; };
+		840C9ABD2000C6E9008C9CA1 /* RPRedpacketBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketBridge.h; sourceTree = "<group>"; };
+		840C9ABE2000C6E9008C9CA1 /* RPRedpacketSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketSetting.h; sourceTree = "<group>"; };
+		840C9AC02000C6E9008C9CA1 /* RPPersonalRedpacketInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPPersonalRedpacketInfo.h; sourceTree = "<group>"; };
+		840C9AC12000C6E9008C9CA1 /* RPRedpacketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketModel.h; sourceTree = "<group>"; };
+		840C9AC22000C6E9008C9CA1 /* RPAdvertInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPAdvertInfo.h; sourceTree = "<group>"; };
+		840C9AC32000C6E9008C9CA1 /* RPUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUserInfo.h; sourceTree = "<group>"; };
+		840C9AC52000C6E9008C9CA1 /* libRedpacketAliAuthAPILib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRedpacketAliAuthAPILib.a; sourceTree = "<group>"; };
+		840C9AC62000C6E9008C9CA1 /* RPRedpacketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRedpacketManager.h; sourceTree = "<group>"; };
 		92769E231EE81A6C00B7EF91 /* libRedPacketAliAuthUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRedPacketAliAuthUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		92769E311EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedpacketTypeAdvertisementHandle.h; sourceTree = "<group>"; };
 		92769E321EE81A8D00B7EF91 /* RedpacketTypeAdvertisementHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedpacketTypeAdvertisementHandle.m; sourceTree = "<group>"; };
@@ -419,49 +419,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B771C11FE761100010BD94 /* libRedpacketAliAuthAPILib.a in Frameworks */,
+				840C9AC72000C6E9008C9CA1 /* libRedpacketAliAuthAPILib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84B771B51FE761100010BD94 /* RedpacketAliAuthAPILib */ = {
+		840C9ABB2000C6E9008C9CA1 /* RedpacketAliAuthAPILib */ = {
 			isa = PBXGroup;
 			children = (
-				84B771B61FE761100010BD94 /* lib */,
-				84B771B81FE761100010BD94 /* Model */,
-				84B771BD1FE761100010BD94 /* RPRedpacketBridge.h */,
-				84B771BE1FE761100010BD94 /* RPRedpacketErrorCode.h */,
-				84B771BF1FE761100010BD94 /* RPRedpacketManager.h */,
-				84B771C01FE761100010BD94 /* RPRedpacketSetting.h */,
+				840C9ABC2000C6E9008C9CA1 /* RPRedpacketErrorCode.h */,
+				840C9ABD2000C6E9008C9CA1 /* RPRedpacketBridge.h */,
+				840C9ABE2000C6E9008C9CA1 /* RPRedpacketSetting.h */,
+				840C9ABF2000C6E9008C9CA1 /* Model */,
+				840C9AC42000C6E9008C9CA1 /* lib */,
+				840C9AC62000C6E9008C9CA1 /* RPRedpacketManager.h */,
 			);
-			path = RedpacketAliAuthAPILib;
+			name = RedpacketAliAuthAPILib;
+			path = "../redpacket-api-ios/RedpacketAliAuthAPILib";
 			sourceTree = "<group>";
 		};
-		84B771B61FE761100010BD94 /* lib */ = {
+		840C9ABF2000C6E9008C9CA1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84B771B71FE761100010BD94 /* libRedpacketAliAuthAPILib.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		84B771B81FE761100010BD94 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				84B771B91FE761100010BD94 /* RPAdvertInfo.h */,
-				84B771BA1FE761100010BD94 /* RPPersonalRedpacketInfo.h */,
-				84B771BB1FE761100010BD94 /* RPRedpacketModel.h */,
-				84B771BC1FE761100010BD94 /* RPUserInfo.h */,
+				840C9AC02000C6E9008C9CA1 /* RPPersonalRedpacketInfo.h */,
+				840C9AC12000C6E9008C9CA1 /* RPRedpacketModel.h */,
+				840C9AC22000C6E9008C9CA1 /* RPAdvertInfo.h */,
+				840C9AC32000C6E9008C9CA1 /* RPUserInfo.h */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		840C9AC42000C6E9008C9CA1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				840C9AC52000C6E9008C9CA1 /* libRedpacketAliAuthAPILib.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		92769E1A1EE81A6C00B7EF91 = {
 			isa = PBXGroup;
 			children = (
-				84B771B51FE761100010BD94 /* RedpacketAliAuthAPILib */,
+				840C9ABB2000C6E9008C9CA1 /* RedpacketAliAuthAPILib */,
 				92769E2F1EE81A8D00B7EF91 /* RedPacketAliAuthUI */,
 				92769E241EE81A6C00B7EF91 /* Products */,
 			);
