@@ -22,4 +22,21 @@ https://docs.yunzhanghu.com/integration/saas.html
 * [UI开源代码下载地址](https://github.com/YunzhanghuOpen/redpacket-ui-open-ios)
 
 
+### 注意：
+这段代码，加到自己的info.plist文件里。
+、、、
 
+<key>LSApplicationQueriesSchemes</key>
+<array>
+<string>alipay</string>
+</array>
+
+<key>CFBundleURLTypes</key>
+<array>
+<dict>
+<key>CFBundleURLName</key>
+<string>alipay</string>
+</dict>
+</array>
+
+、、、
